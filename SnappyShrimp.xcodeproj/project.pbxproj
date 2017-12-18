@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06CF33A11FE81F90007B0B74 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CF33A01FE81F90007B0B74 /* FBSnapshotTestCase.framework */; };
 		4214CC0A1FDFE34A00C7AB61 /* SnappyShrimp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4214CBFC1FDFE34A00C7AB61 /* SnappyShrimp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4214CC2B1FDFE62700C7AB61 /* HostWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC261FDFE62600C7AB61 /* HostWindow.swift */; };
 		4214CC2C1FDFE62700C7AB61 /* Specifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC271FDFE62700C7AB61 /* Specifications.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06CF33A01FE81F90007B0B74 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
 		4214CBF91FDFE34A00C7AB61 /* SnappyShrimp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnappyShrimp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4214CBFC1FDFE34A00C7AB61 /* SnappyShrimp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnappyShrimp.h; sourceTree = "<group>"; };
 		4214CBFD1FDFE34A00C7AB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,12 +69,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06CF33A11FE81F90007B0B74 /* FBSnapshotTestCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06CF339E1FE81CDD007B0B74 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				4214CBFC1FDFE34A00C7AB61 /* SnappyShrimp.h */,
+				4214CBFD1FDFE34A00C7AB61 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		06CF339F1FE81CEB007B0B74 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4214CC261FDFE62600C7AB61 /* HostWindow.swift */,
+				4214CC291FDFE62700C7AB61 /* Presentation.swift */,
+				4214CC281FDFE62700C7AB61 /* SnapshotTest.swift */,
+				4214CC271FDFE62700C7AB61 /* Specifications.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
 		4214CBEF1FDFE34A00C7AB61 = {
 			isa = PBXGroup;
 			children = (
@@ -94,12 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				4214CC6B1FDFEFA700C7AB61 /* Device */,
-				4214CC261FDFE62600C7AB61 /* HostWindow.swift */,
-				4214CC291FDFE62700C7AB61 /* Presentation.swift */,
-				4214CC281FDFE62700C7AB61 /* SnapshotTest.swift */,
-				4214CC271FDFE62700C7AB61 /* Specifications.swift */,
-				4214CBFC1FDFE34A00C7AB61 /* SnappyShrimp.h */,
-				4214CBFD1FDFE34A00C7AB61 /* Info.plist */,
+				06CF339F1FE81CEB007B0B74 /* Source */,
+				06CF339E1FE81CDD007B0B74 /* Support */,
 			);
 			path = SnappyShrimp;
 			sourceTree = "<group>";
@@ -107,6 +126,7 @@
 		4214CC3E1FDFE6E700C7AB61 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				06CF33A01FE81F90007B0B74 /* FBSnapshotTestCase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,9 +134,9 @@
 		4214CC6B1FDFEFA700C7AB61 /* Device */ = {
 			isa = PBXGroup;
 			children = (
+				4214CC6C1FDFEFE100C7AB61 /* Device.swift */,
 				4214CC6E1FDFEFEA00C7AB61 /* iPhones */,
 				4214CC6F1FDFEFF000C7AB61 /* iPads */,
-				4214CC6C1FDFEFE100C7AB61 /* Device.swift */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -175,6 +195,7 @@
 				4214CBF51FDFE34A00C7AB61 /* Frameworks */,
 				4214CBF61FDFE34A00C7AB61 /* Headers */,
 				4214CBF71FDFE34A00C7AB61 /* Resources */,
+				06CF33A21FE81FD6007B0B74 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -229,6 +250,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06CF33A21FE81FD6007B0B74 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FBSnapshotTestCase.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4214CBF41FDFE34A00C7AB61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -236,6 +274,9 @@
 			files = (
 				4214CC2B1FDFE62700C7AB61 /* HostWindow.swift in Sources */,
 				4214CC2E1FDFE62700C7AB61 /* Presentation.swift in Sources */,
+				4214CC6D1FDFEFE100C7AB61 /* Device.swift in Sources */,
+				4214CC2C1FDFE62700C7AB61 /* Specifications.swift in Sources */,
+				4214CC2D1FDFE62700C7AB61 /* SnapshotTest.swift in Sources */,
 				4214CC811FDFF08900C7AB61 /* iPhone8Plus.swift in Sources */,
 				4214CC841FDFF08900C7AB61 /* iPhoneX.swift in Sources */,
 				4214CC7E1FDFF08900C7AB61 /* iPhone7.swift in Sources */,
@@ -243,15 +284,12 @@
 				4214CC821FDFF08900C7AB61 /* iPhone6.swift in Sources */,
 				4214CC851FDFF08900C7AB61 /* iPhone6Plus.swift in Sources */,
 				4214CC831FDFF08900C7AB61 /* iPhone7Plus.swift in Sources */,
-				4214CC2D1FDFE62700C7AB61 /* SnapshotTest.swift in Sources */,
 				4214CC911FDFF0A900C7AB61 /* iPadPro12.swift in Sources */,
 				4214CC951FDFF0A900C7AB61 /* iPadMini.swift in Sources */,
 				4214CC921FDFF0A900C7AB61 /* iPadMini2.swift in Sources */,
 				4214CC8E1FDFF0A900C7AB61 /* iPadPro10.swift in Sources */,
-				4214CC2C1FDFE62700C7AB61 /* Specifications.swift in Sources */,
 				4214CC931FDFF0A900C7AB61 /* iPadAir.swift in Sources */,
 				4214CC901FDFF0A900C7AB61 /* iPad5thGen.swift in Sources */,
-				4214CC6D1FDFEFE100C7AB61 /* Device.swift in Sources */,
 				4214CC7D1FDFF08900C7AB61 /* iPhone6S.swift in Sources */,
 				4214CC7F1FDFF08900C7AB61 /* iPhone6SPlus.swift in Sources */,
 				4214CC941FDFF0A900C7AB61 /* iPadAir2.swift in Sources */,
@@ -387,7 +425,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SnappyShrimp/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -411,7 +452,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PLATFORM_DIR)/Developer/Library/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SnappyShrimp/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
