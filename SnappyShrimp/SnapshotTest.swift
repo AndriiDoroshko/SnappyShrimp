@@ -29,7 +29,9 @@ open class SnapshotTest: FBSnapshotTestCase{
         window.makeKeyAndVisible()
         
         let name = [presentation.name,
-                    context.name, UIDevice.current.systemVersion]
+                    context.name,
+                    UIDevice.current.systemName,
+                    UIDevice.current.systemVersion]
             .map { $0.replacingOccurrences(of: " ", with: "_") }
             .filter { !$0.isEmpty }
             .joined(separator: "_")
