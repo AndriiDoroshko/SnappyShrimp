@@ -13,7 +13,6 @@ open class SnapshotTest: FBSnapshotTestCase{
     }
     
     ///Verifies your snapshots with specified controller, whose view you're going to test and a device with its parameteres.
-    @available(iOS 10.0, *)
     public final func verify(
         _ controller: UIViewController,
         for presentation: Presentation,
@@ -30,31 +29,12 @@ open class SnapshotTest: FBSnapshotTestCase{
         window.makeKeyAndVisible()
         
         let name = [presentation.name,
-                    context.name]
+                    context.name, UIDevice.current.systemVersion]
             .map { $0.replacingOccurrences(of: " ", with: "_") }
             .filter { !$0.isEmpty }
             .joined(separator: "_")
         
         FBSnapshotVerifyView(window, identifier: name, suffixes: [""], file: file, line: line)
-    }
-    
-    @available(iOS 9.0, *)
-    public final func verify(
-        _ controller: UIViewController,
-        for presentation: Presentation,
-        file: StaticString = #file,
-        line: UInt = #line) {
-        
-        guard presentation.userInterfaceIdiom == UIDevice.current.userInterfaceIdiom else { return }
-        guard presentation.scale == UIScreen.main.scale else { return }
-        
-        
-        let window = HostWindow(presentation: presentation)
-        
-        window.rootViewController = controller
-        window.makeKeyAndVisible()
-        
-        FBSnapshotVerifyView(window, identifier: presentation.name, suffixes: [""], file: file, line: line)
     }
 }
 

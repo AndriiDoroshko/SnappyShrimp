@@ -12,16 +12,6 @@ public class HostWindow: UIWindow {
         return traits
     }
     
-    @available(iOS 9.0, *)
-    public init(presentation: Presentation) {
-        self.presentation = presentation
-        self.traits = UITraitCollection(traitsFrom: [presentation.traitCollection])
-        super.init(frame: presentation.size.asRect)
-        self.mask = presentation.mask
-        self.mask?.frame = self.bounds
-    }
-    
-    @available(iOS 10.0, *)
     public init(presentation: Presentation, context: Context = .init()) {
         self.presentation = presentation
         self.traits = UITraitCollection(traitsFrom: [presentation.traitCollection, context.traitCollection])
@@ -35,19 +25,20 @@ public class HostWindow: UIWindow {
     }
 }
 
-@available(iOS 10.0, *)
 public struct Context {
-    public var layoutDirection: UITraitEnvironmentLayoutDirection
-    public var contentSizeCategory: UIContentSizeCategory
     public var name: String
-    public var traitCollection: UITraitCollection {
-        return UITraitCollection(traitsFrom: [UITraitCollection(layoutDirection: self.layoutDirection),
-                                              UITraitCollection(preferredContentSizeCategory: self.contentSizeCategory)])
+    public var traitCollection: UITraitCollection
+    
+    @available(iOS 10.0, *)
+    public init(layoutDirection: UITraitEnvironmentLayoutDirection = .unspecified, contentSizeCategory: UIContentSizeCategory = .unspecified, name: String = "") {
+        self.traitCollection = UITraitCollection(traitsFrom: [
+            UITraitCollection(layoutDirection: layoutDirection),
+            UITraitCollection(preferredContentSizeCategory: contentSizeCategory)])
+        self.name = name
     }
     
-    public init(layoutDirection: UITraitEnvironmentLayoutDirection = .unspecified, contentSizeCategory: UIContentSizeCategory = .unspecified, name: String = "") {
-        self.layoutDirection = layoutDirection
-        self.contentSizeCategory = contentSizeCategory
+    public init(name: String = "") {
         self.name = name
+        self.traitCollection = UITraitCollection()
     }
 }
