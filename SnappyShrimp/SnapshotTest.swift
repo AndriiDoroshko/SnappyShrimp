@@ -17,7 +17,7 @@ open class SnapshotTest: FBSnapshotTestCase{
     public final func verify(
         _ controller: UIViewController,
         for presentation: Presentation,
-        with context: Context = Context(),
+        in context: Context = Context(),
         file: StaticString = #file,
         line: UInt = #line) {
         
@@ -36,6 +36,25 @@ open class SnapshotTest: FBSnapshotTestCase{
             .joined(separator: "_")
         
         FBSnapshotVerifyView(window, identifier: name, suffixes: [""], file: file, line: line)
+    }
+    
+    @available(iOS 9.0, *)
+    public final func verify(
+        _ controller: UIViewController,
+        for presentation: Presentation,
+        file: StaticString = #file,
+        line: UInt = #line) {
+        
+        guard presentation.userInterfaceIdiom == UIDevice.current.userInterfaceIdiom else { return }
+        guard presentation.scale == UIScreen.main.scale else { return }
+        
+        
+        let window = HostWindow(presentation: presentation)
+        
+        window.rootViewController = controller
+        window.makeKeyAndVisible()
+        
+        FBSnapshotVerifyView(window, identifier: presentation.name, suffixes: [""], file: file, line: line)
     }
 }
 
