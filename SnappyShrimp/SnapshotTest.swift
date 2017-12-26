@@ -26,8 +26,6 @@ open class SnapshotTest: FBSnapshotTestCase{
         let window = HostWindow(presentation: presentation, context: context)
 
         window.rootViewController = controller
-        window.makeKeyAndVisible()
-        
         let name = [presentation.name,
                     context.name,
                     UIDevice.current.systemName,
