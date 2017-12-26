@@ -26,8 +26,6 @@ open class SnapshotTest: FBSnapshotTestCase{
         let window = HostWindow(presentation: presentation, context: context)
 
         window.rootViewController = controller
-        window.makeKeyAndVisible()
-        
         let name = [presentation.name,
                     context.name,
                     UIDevice.current.systemName,
@@ -35,6 +33,8 @@ open class SnapshotTest: FBSnapshotTestCase{
             .map { $0.replacingOccurrences(of: " ", with: "_") }
             .filter { !$0.isEmpty }
             .joined(separator: "_")
+        
+        window.isHidden = false
         
         FBSnapshotVerifyView(window, identifier: name, suffixes: [""], file: file, line: line)
     }

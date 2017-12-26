@@ -14,24 +14,24 @@
 		4214CC2D1FDFE62700C7AB61 /* SnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC281FDFE62700C7AB61 /* SnapshotTest.swift */; };
 		4214CC2E1FDFE62700C7AB61 /* Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC291FDFE62700C7AB61 /* Presentation.swift */; };
 		4214CC6D1FDFEFE100C7AB61 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC6C1FDFEFE100C7AB61 /* Device.swift */; };
-		4214CC7C1FDFF08900C7AB61 /* iPhoneSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC721FDFF08800C7AB61 /* iPhoneSE.swift */; };
-		4214CC7D1FDFF08900C7AB61 /* iPhone6S.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC731FDFF08800C7AB61 /* iPhone6S.swift */; };
-		4214CC7E1FDFF08900C7AB61 /* iPhone7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC741FDFF08800C7AB61 /* iPhone7.swift */; };
-		4214CC7F1FDFF08900C7AB61 /* iPhone6SPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC751FDFF08900C7AB61 /* iPhone6SPlus.swift */; };
-		4214CC801FDFF08900C7AB61 /* iPhone8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC761FDFF08900C7AB61 /* iPhone8.swift */; };
-		4214CC811FDFF08900C7AB61 /* iPhone8Plus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC771FDFF08900C7AB61 /* iPhone8Plus.swift */; };
-		4214CC821FDFF08900C7AB61 /* iPhone6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC781FDFF08900C7AB61 /* iPhone6.swift */; };
-		4214CC831FDFF08900C7AB61 /* iPhone7Plus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC791FDFF08900C7AB61 /* iPhone7Plus.swift */; };
-		4214CC841FDFF08900C7AB61 /* iPhoneX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC7A1FDFF08900C7AB61 /* iPhoneX.swift */; };
-		4214CC851FDFF08900C7AB61 /* iPhone6Plus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC7B1FDFF08900C7AB61 /* iPhone6Plus.swift */; };
-		4214CC8E1FDFF0A900C7AB61 /* iPadPro10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC861FDFF0A800C7AB61 /* iPadPro10.swift */; };
-		4214CC8F1FDFF0A900C7AB61 /* iPadPro9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC871FDFF0A800C7AB61 /* iPadPro9.swift */; };
-		4214CC901FDFF0A900C7AB61 /* iPad5thGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC881FDFF0A800C7AB61 /* iPad5thGen.swift */; };
-		4214CC911FDFF0A900C7AB61 /* iPadPro12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC891FDFF0A800C7AB61 /* iPadPro12.swift */; };
-		4214CC921FDFF0A900C7AB61 /* iPadMini2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC8A1FDFF0A800C7AB61 /* iPadMini2.swift */; };
-		4214CC931FDFF0A900C7AB61 /* iPadAir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC8B1FDFF0A900C7AB61 /* iPadAir.swift */; };
-		4214CC941FDFF0A900C7AB61 /* iPadAir2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC8C1FDFF0A900C7AB61 /* iPadAir2.swift */; };
-		4214CC951FDFF0A900C7AB61 /* iPadMini.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC8D1FDFF0A900C7AB61 /* iPadMini.swift */; };
+		427E96141FF2A08600B4A2B4 /* iPhone8Plus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E960A1FF2A08600B4A2B4 /* iPhone8Plus.swift */; };
+		427E96151FF2A08600B4A2B4 /* iPhone6S.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E960B1FF2A08600B4A2B4 /* iPhone6S.swift */; };
+		427E96161FF2A08600B4A2B4 /* iPhoneSE.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E960C1FF2A08600B4A2B4 /* iPhoneSE.swift */; };
+		427E96171FF2A08600B4A2B4 /* iPhone8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E960D1FF2A08600B4A2B4 /* iPhone8.swift */; };
+		427E96181FF2A08600B4A2B4 /* iPhone6SPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E960E1FF2A08600B4A2B4 /* iPhone6SPlus.swift */; };
+		427E96191FF2A08600B4A2B4 /* iPhone7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E960F1FF2A08600B4A2B4 /* iPhone7.swift */; };
+		427E961A1FF2A08600B4A2B4 /* iPhone7Plus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E96101FF2A08600B4A2B4 /* iPhone7Plus.swift */; };
+		427E961B1FF2A08600B4A2B4 /* iPhone6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E96111FF2A08600B4A2B4 /* iPhone6.swift */; };
+		427E961C1FF2A08600B4A2B4 /* iPhoneX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E96121FF2A08600B4A2B4 /* iPhoneX.swift */; };
+		427E961D1FF2A08600B4A2B4 /* iPhone6Plus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E96131FF2A08600B4A2B4 /* iPhone6Plus.swift */; };
+		427E96261FF2A09000B4A2B4 /* iPadMini2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E961E1FF2A09000B4A2B4 /* iPadMini2.swift */; };
+		427E96271FF2A09000B4A2B4 /* iPad5thGen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E961F1FF2A09000B4A2B4 /* iPad5thGen.swift */; };
+		427E96281FF2A09000B4A2B4 /* iPadAir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E96201FF2A09000B4A2B4 /* iPadAir.swift */; };
+		427E96291FF2A09000B4A2B4 /* iPadAir2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E96211FF2A09000B4A2B4 /* iPadAir2.swift */; };
+		427E962A1FF2A09000B4A2B4 /* iPadPro10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E96221FF2A09000B4A2B4 /* iPadPro10.swift */; };
+		427E962B1FF2A09000B4A2B4 /* iPadMini.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E96231FF2A09000B4A2B4 /* iPadMini.swift */; };
+		427E962C1FF2A09000B4A2B4 /* iPadPro12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E96241FF2A09000B4A2B4 /* iPadPro12.swift */; };
+		427E962D1FF2A09000B4A2B4 /* iPadPro9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E96251FF2A09000B4A2B4 /* iPadPro9.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,24 +44,24 @@
 		4214CC281FDFE62700C7AB61 /* SnapshotTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotTest.swift; sourceTree = "<group>"; };
 		4214CC291FDFE62700C7AB61 /* Presentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentation.swift; sourceTree = "<group>"; };
 		4214CC6C1FDFEFE100C7AB61 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		4214CC721FDFF08800C7AB61 /* iPhoneSE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhoneSE.swift; sourceTree = "<group>"; };
-		4214CC731FDFF08800C7AB61 /* iPhone6S.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhone6S.swift; sourceTree = "<group>"; };
-		4214CC741FDFF08800C7AB61 /* iPhone7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhone7.swift; sourceTree = "<group>"; };
-		4214CC751FDFF08900C7AB61 /* iPhone6SPlus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhone6SPlus.swift; sourceTree = "<group>"; };
-		4214CC761FDFF08900C7AB61 /* iPhone8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhone8.swift; sourceTree = "<group>"; };
-		4214CC771FDFF08900C7AB61 /* iPhone8Plus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhone8Plus.swift; sourceTree = "<group>"; };
-		4214CC781FDFF08900C7AB61 /* iPhone6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhone6.swift; sourceTree = "<group>"; };
-		4214CC791FDFF08900C7AB61 /* iPhone7Plus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhone7Plus.swift; sourceTree = "<group>"; };
-		4214CC7A1FDFF08900C7AB61 /* iPhoneX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhoneX.swift; sourceTree = "<group>"; };
-		4214CC7B1FDFF08900C7AB61 /* iPhone6Plus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhone6Plus.swift; sourceTree = "<group>"; };
-		4214CC861FDFF0A800C7AB61 /* iPadPro10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadPro10.swift; sourceTree = "<group>"; };
-		4214CC871FDFF0A800C7AB61 /* iPadPro9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadPro9.swift; sourceTree = "<group>"; };
-		4214CC881FDFF0A800C7AB61 /* iPad5thGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPad5thGen.swift; sourceTree = "<group>"; };
-		4214CC891FDFF0A800C7AB61 /* iPadPro12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadPro12.swift; sourceTree = "<group>"; };
-		4214CC8A1FDFF0A800C7AB61 /* iPadMini2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadMini2.swift; sourceTree = "<group>"; };
-		4214CC8B1FDFF0A900C7AB61 /* iPadAir.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadAir.swift; sourceTree = "<group>"; };
-		4214CC8C1FDFF0A900C7AB61 /* iPadAir2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadAir2.swift; sourceTree = "<group>"; };
-		4214CC8D1FDFF0A900C7AB61 /* iPadMini.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadMini.swift; sourceTree = "<group>"; };
+		427E960A1FF2A08600B4A2B4 /* iPhone8Plus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPhone8Plus.swift; path = iPhone/iPhone8Plus.swift; sourceTree = "<group>"; };
+		427E960B1FF2A08600B4A2B4 /* iPhone6S.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPhone6S.swift; path = iPhone/iPhone6S.swift; sourceTree = "<group>"; };
+		427E960C1FF2A08600B4A2B4 /* iPhoneSE.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPhoneSE.swift; path = iPhone/iPhoneSE.swift; sourceTree = "<group>"; };
+		427E960D1FF2A08600B4A2B4 /* iPhone8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPhone8.swift; path = iPhone/iPhone8.swift; sourceTree = "<group>"; };
+		427E960E1FF2A08600B4A2B4 /* iPhone6SPlus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPhone6SPlus.swift; path = iPhone/iPhone6SPlus.swift; sourceTree = "<group>"; };
+		427E960F1FF2A08600B4A2B4 /* iPhone7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPhone7.swift; path = iPhone/iPhone7.swift; sourceTree = "<group>"; };
+		427E96101FF2A08600B4A2B4 /* iPhone7Plus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPhone7Plus.swift; path = iPhone/iPhone7Plus.swift; sourceTree = "<group>"; };
+		427E96111FF2A08600B4A2B4 /* iPhone6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPhone6.swift; path = iPhone/iPhone6.swift; sourceTree = "<group>"; };
+		427E96121FF2A08600B4A2B4 /* iPhoneX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPhoneX.swift; path = iPhone/iPhoneX.swift; sourceTree = "<group>"; };
+		427E96131FF2A08600B4A2B4 /* iPhone6Plus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPhone6Plus.swift; path = iPhone/iPhone6Plus.swift; sourceTree = "<group>"; };
+		427E961E1FF2A09000B4A2B4 /* iPadMini2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPadMini2.swift; path = iPad/iPadMini2.swift; sourceTree = "<group>"; };
+		427E961F1FF2A09000B4A2B4 /* iPad5thGen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPad5thGen.swift; path = iPad/iPad5thGen.swift; sourceTree = "<group>"; };
+		427E96201FF2A09000B4A2B4 /* iPadAir.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPadAir.swift; path = iPad/iPadAir.swift; sourceTree = "<group>"; };
+		427E96211FF2A09000B4A2B4 /* iPadAir2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPadAir2.swift; path = iPad/iPadAir2.swift; sourceTree = "<group>"; };
+		427E96221FF2A09000B4A2B4 /* iPadPro10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPadPro10.swift; path = iPad/iPadPro10.swift; sourceTree = "<group>"; };
+		427E96231FF2A09000B4A2B4 /* iPadMini.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPadMini.swift; path = iPad/iPadMini.swift; sourceTree = "<group>"; };
+		427E96241FF2A09000B4A2B4 /* iPadPro12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPadPro12.swift; path = iPad/iPadPro12.swift; sourceTree = "<group>"; };
+		427E96251FF2A09000B4A2B4 /* iPadPro9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPadPro9.swift; path = iPad/iPadPro9.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,43 +134,43 @@
 		4214CC6B1FDFEFA700C7AB61 /* Device */ = {
 			isa = PBXGroup;
 			children = (
+				427E96091FF2A07700B4A2B4 /* iPhone */,
+				427E96071FF2A06600B4A2B4 /* iPad */,
 				4214CC6C1FDFEFE100C7AB61 /* Device.swift */,
-				4214CC6E1FDFEFEA00C7AB61 /* iPhones */,
-				4214CC6F1FDFEFF000C7AB61 /* iPads */,
 			);
 			path = Device;
 			sourceTree = "<group>";
 		};
-		4214CC6E1FDFEFEA00C7AB61 /* iPhones */ = {
+		427E96071FF2A06600B4A2B4 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
-				4214CC781FDFF08900C7AB61 /* iPhone6.swift */,
-				4214CC7B1FDFF08900C7AB61 /* iPhone6Plus.swift */,
-				4214CC731FDFF08800C7AB61 /* iPhone6S.swift */,
-				4214CC751FDFF08900C7AB61 /* iPhone6SPlus.swift */,
-				4214CC741FDFF08800C7AB61 /* iPhone7.swift */,
-				4214CC791FDFF08900C7AB61 /* iPhone7Plus.swift */,
-				4214CC761FDFF08900C7AB61 /* iPhone8.swift */,
-				4214CC771FDFF08900C7AB61 /* iPhone8Plus.swift */,
-				4214CC721FDFF08800C7AB61 /* iPhoneSE.swift */,
-				4214CC7A1FDFF08900C7AB61 /* iPhoneX.swift */,
+				427E961F1FF2A09000B4A2B4 /* iPad5thGen.swift */,
+				427E96201FF2A09000B4A2B4 /* iPadAir.swift */,
+				427E96211FF2A09000B4A2B4 /* iPadAir2.swift */,
+				427E96231FF2A09000B4A2B4 /* iPadMini.swift */,
+				427E961E1FF2A09000B4A2B4 /* iPadMini2.swift */,
+				427E96251FF2A09000B4A2B4 /* iPadPro9.swift */,
+				427E96221FF2A09000B4A2B4 /* iPadPro10.swift */,
+				427E96241FF2A09000B4A2B4 /* iPadPro12.swift */,
 			);
-			path = iPhones;
+			name = iPad;
 			sourceTree = "<group>";
 		};
-		4214CC6F1FDFEFF000C7AB61 /* iPads */ = {
+		427E96091FF2A07700B4A2B4 /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				4214CC881FDFF0A800C7AB61 /* iPad5thGen.swift */,
-				4214CC8B1FDFF0A900C7AB61 /* iPadAir.swift */,
-				4214CC8C1FDFF0A900C7AB61 /* iPadAir2.swift */,
-				4214CC8D1FDFF0A900C7AB61 /* iPadMini.swift */,
-				4214CC8A1FDFF0A800C7AB61 /* iPadMini2.swift */,
-				4214CC871FDFF0A800C7AB61 /* iPadPro9.swift */,
-				4214CC861FDFF0A800C7AB61 /* iPadPro10.swift */,
-				4214CC891FDFF0A800C7AB61 /* iPadPro12.swift */,
+				427E96111FF2A08600B4A2B4 /* iPhone6.swift */,
+				427E96131FF2A08600B4A2B4 /* iPhone6Plus.swift */,
+				427E960B1FF2A08600B4A2B4 /* iPhone6S.swift */,
+				427E960E1FF2A08600B4A2B4 /* iPhone6SPlus.swift */,
+				427E960F1FF2A08600B4A2B4 /* iPhone7.swift */,
+				427E96101FF2A08600B4A2B4 /* iPhone7Plus.swift */,
+				427E960D1FF2A08600B4A2B4 /* iPhone8.swift */,
+				427E960A1FF2A08600B4A2B4 /* iPhone8Plus.swift */,
+				427E960C1FF2A08600B4A2B4 /* iPhoneSE.swift */,
+				427E96121FF2A08600B4A2B4 /* iPhoneX.swift */,
 			);
-			path = iPads;
+			name = iPhone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,28 +273,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				4214CC2B1FDFE62700C7AB61 /* HostWindow.swift in Sources */,
+				427E96181FF2A08600B4A2B4 /* iPhone6SPlus.swift in Sources */,
+				427E96141FF2A08600B4A2B4 /* iPhone8Plus.swift in Sources */,
+				427E961C1FF2A08600B4A2B4 /* iPhoneX.swift in Sources */,
+				427E96171FF2A08600B4A2B4 /* iPhone8.swift in Sources */,
 				4214CC2E1FDFE62700C7AB61 /* Presentation.swift in Sources */,
 				4214CC6D1FDFEFE100C7AB61 /* Device.swift in Sources */,
+				427E96271FF2A09000B4A2B4 /* iPad5thGen.swift in Sources */,
+				427E962C1FF2A09000B4A2B4 /* iPadPro12.swift in Sources */,
+				427E96291FF2A09000B4A2B4 /* iPadAir2.swift in Sources */,
+				427E96281FF2A09000B4A2B4 /* iPadAir.swift in Sources */,
+				427E962A1FF2A09000B4A2B4 /* iPadPro10.swift in Sources */,
+				427E962D1FF2A09000B4A2B4 /* iPadPro9.swift in Sources */,
+				427E96261FF2A09000B4A2B4 /* iPadMini2.swift in Sources */,
+				427E961D1FF2A08600B4A2B4 /* iPhone6Plus.swift in Sources */,
+				427E961B1FF2A08600B4A2B4 /* iPhone6.swift in Sources */,
+				427E96191FF2A08600B4A2B4 /* iPhone7.swift in Sources */,
+				427E962B1FF2A09000B4A2B4 /* iPadMini.swift in Sources */,
+				427E96161FF2A08600B4A2B4 /* iPhoneSE.swift in Sources */,
 				4214CC2C1FDFE62700C7AB61 /* Specifications.swift in Sources */,
 				4214CC2D1FDFE62700C7AB61 /* SnapshotTest.swift in Sources */,
-				4214CC811FDFF08900C7AB61 /* iPhone8Plus.swift in Sources */,
-				4214CC841FDFF08900C7AB61 /* iPhoneX.swift in Sources */,
-				4214CC7E1FDFF08900C7AB61 /* iPhone7.swift in Sources */,
-				4214CC7C1FDFF08900C7AB61 /* iPhoneSE.swift in Sources */,
-				4214CC821FDFF08900C7AB61 /* iPhone6.swift in Sources */,
-				4214CC851FDFF08900C7AB61 /* iPhone6Plus.swift in Sources */,
-				4214CC831FDFF08900C7AB61 /* iPhone7Plus.swift in Sources */,
-				4214CC911FDFF0A900C7AB61 /* iPadPro12.swift in Sources */,
-				4214CC951FDFF0A900C7AB61 /* iPadMini.swift in Sources */,
-				4214CC921FDFF0A900C7AB61 /* iPadMini2.swift in Sources */,
-				4214CC8E1FDFF0A900C7AB61 /* iPadPro10.swift in Sources */,
-				4214CC931FDFF0A900C7AB61 /* iPadAir.swift in Sources */,
-				4214CC901FDFF0A900C7AB61 /* iPad5thGen.swift in Sources */,
-				4214CC7D1FDFF08900C7AB61 /* iPhone6S.swift in Sources */,
-				4214CC7F1FDFF08900C7AB61 /* iPhone6SPlus.swift in Sources */,
-				4214CC941FDFF0A900C7AB61 /* iPadAir2.swift in Sources */,
-				4214CC801FDFF08900C7AB61 /* iPhone8.swift in Sources */,
-				4214CC8F1FDFF0A900C7AB61 /* iPadPro9.swift in Sources */,
+				427E961A1FF2A08600B4A2B4 /* iPhone7Plus.swift in Sources */,
+				427E96151FF2A08600B4A2B4 /* iPhone6S.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
