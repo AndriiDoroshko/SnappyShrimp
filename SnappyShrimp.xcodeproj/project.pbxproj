@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06CF33A11FE81F90007B0B74 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CF33A01FE81F90007B0B74 /* FBSnapshotTestCase.framework */; };
+		06F6C6581FF3F73B00E055F0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F6C6571FF3F73B00E055F0 /* Media.xcassets */; };
 		4214CC0A1FDFE34A00C7AB61 /* SnappyShrimp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4214CBFC1FDFE34A00C7AB61 /* SnappyShrimp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4214CC2B1FDFE62700C7AB61 /* HostWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC261FDFE62600C7AB61 /* HostWindow.swift */; };
 		4214CC2C1FDFE62700C7AB61 /* Specifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC271FDFE62700C7AB61 /* Specifications.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		06CF33A01FE81F90007B0B74 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
+		06F6C6571FF3F73B00E055F0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		4214CBF91FDFE34A00C7AB61 /* SnappyShrimp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnappyShrimp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4214CBFC1FDFE34A00C7AB61 /* SnappyShrimp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnappyShrimp.h; sourceTree = "<group>"; };
 		4214CBFD1FDFE34A00C7AB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				4214CBFC1FDFE34A00C7AB61 /* SnappyShrimp.h */,
 				4214CBFD1FDFE34A00C7AB61 /* Info.plist */,
+				06F6C6571FF3F73B00E055F0 /* Media.xcassets */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F6C6581FF3F73B00E055F0 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
