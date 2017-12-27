@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		06CF33A11FE81F90007B0B74 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CF33A01FE81F90007B0B74 /* FBSnapshotTestCase.framework */; };
+		06F6C6581FF3F73B00E055F0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F6C6571FF3F73B00E055F0 /* Media.xcassets */; };
+		06F6C6601FF3FE6F00E055F0 /* SnappyShrimpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6C65F1FF3FE6F00E055F0 /* SnappyShrimpTests.swift */; };
+		06F6C6621FF3FE6F00E055F0 /* SnappyShrimp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4214CBF91FDFE34A00C7AB61 /* SnappyShrimp.framework */; };
 		4214CC0A1FDFE34A00C7AB61 /* SnappyShrimp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4214CBFC1FDFE34A00C7AB61 /* SnappyShrimp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4214CC2B1FDFE62700C7AB61 /* HostWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC261FDFE62600C7AB61 /* HostWindow.swift */; };
 		4214CC2C1FDFE62700C7AB61 /* Specifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC271FDFE62700C7AB61 /* Specifications.swift */; };
@@ -34,8 +37,22 @@
 		427E962D1FF2A09000B4A2B4 /* iPadPro9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E96251FF2A09000B4A2B4 /* iPadPro9.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		06F6C6631FF3FE6F00E055F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4214CBF01FDFE34A00C7AB61 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4214CBF81FDFE34A00C7AB61;
+			remoteInfo = SnappyShrimp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		06CF33A01FE81F90007B0B74 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
+		06F6C6571FF3F73B00E055F0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		06F6C65D1FF3FE6F00E055F0 /* SnappyShrimpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnappyShrimpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06F6C65F1FF3FE6F00E055F0 /* SnappyShrimpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappyShrimpTests.swift; sourceTree = "<group>"; };
+		06F6C6611FF3FE6F00E055F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4214CBF91FDFE34A00C7AB61 /* SnappyShrimp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnappyShrimp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4214CBFC1FDFE34A00C7AB61 /* SnappyShrimp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnappyShrimp.h; sourceTree = "<group>"; };
 		4214CBFD1FDFE34A00C7AB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +82,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		06F6C65A1FF3FE6F00E055F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F6C6621FF3FE6F00E055F0 /* SnappyShrimp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4214CBF51FDFE34A00C7AB61 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -81,6 +106,7 @@
 			children = (
 				4214CBFC1FDFE34A00C7AB61 /* SnappyShrimp.h */,
 				4214CBFD1FDFE34A00C7AB61 /* Info.plist */,
+				06F6C6571FF3F73B00E055F0 /* Media.xcassets */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -96,10 +122,20 @@
 			name = Source;
 			sourceTree = "<group>";
 		};
+		06F6C65E1FF3FE6F00E055F0 /* SnappyShrimpTests */ = {
+			isa = PBXGroup;
+			children = (
+				06F6C65F1FF3FE6F00E055F0 /* SnappyShrimpTests.swift */,
+				06F6C6611FF3FE6F00E055F0 /* Info.plist */,
+			);
+			path = SnappyShrimpTests;
+			sourceTree = "<group>";
+		};
 		4214CBEF1FDFE34A00C7AB61 = {
 			isa = PBXGroup;
 			children = (
 				4214CBFB1FDFE34A00C7AB61 /* SnappyShrimp */,
+				06F6C65E1FF3FE6F00E055F0 /* SnappyShrimpTests */,
 				4214CBFA1FDFE34A00C7AB61 /* Products */,
 				4214CC3E1FDFE6E700C7AB61 /* Frameworks */,
 			);
@@ -109,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				4214CBF91FDFE34A00C7AB61 /* SnappyShrimp.framework */,
+				06F6C65D1FF3FE6F00E055F0 /* SnappyShrimpTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,6 +224,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		06F6C65C1FF3FE6F00E055F0 /* SnappyShrimpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06F6C6671FF3FE6F00E055F0 /* Build configuration list for PBXNativeTarget "SnappyShrimpTests" */;
+			buildPhases = (
+				06F6C6591FF3FE6F00E055F0 /* Sources */,
+				06F6C65A1FF3FE6F00E055F0 /* Frameworks */,
+				06F6C65B1FF3FE6F00E055F0 /* Resources */,
+				06F6C6681FF3FF3100E055F0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06F6C6641FF3FE6F00E055F0 /* PBXTargetDependency */,
+			);
+			name = SnappyShrimpTests;
+			productName = SnappyShrimpTests;
+			productReference = 06F6C65D1FF3FE6F00E055F0 /* SnappyShrimpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4214CBF81FDFE34A00C7AB61 /* SnappyShrimp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4214CC0D1FDFE34A00C7AB61 /* Build configuration list for PBXNativeTarget "SnappyShrimp" */;
@@ -216,6 +272,10 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Andrey Doroshko";
 				TargetAttributes = {
+					06F6C65C1FF3FE6F00E055F0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					4214CBF81FDFE34A00C7AB61 = {
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
@@ -236,15 +296,24 @@
 			projectRoot = "";
 			targets = (
 				4214CBF81FDFE34A00C7AB61 /* SnappyShrimp */,
+				06F6C65C1FF3FE6F00E055F0 /* SnappyShrimpTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		06F6C65B1FF3FE6F00E055F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4214CBF71FDFE34A00C7AB61 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F6C6581FF3F73B00E055F0 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,9 +334,31 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
+		06F6C6681FF3FF3100E055F0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FBSnapshotTestCase.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		06F6C6591FF3FE6F00E055F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06F6C6601FF3FE6F00E055F0 /* SnappyShrimpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4214CBF41FDFE34A00C7AB61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -300,7 +391,47 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		06F6C6641FF3FE6F00E055F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4214CBF81FDFE34A00C7AB61 /* SnappyShrimp */;
+			targetProxy = 06F6C6631FF3FE6F00E055F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		06F6C6651FF3FE6F00E055F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95F456P57Y;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				INFOPLIST_FILE = SnappyShrimpTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = personal.SnappyShrimpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06F6C6661FF3FE6F00E055F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95F456P57Y;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
+				INFOPLIST_FILE = SnappyShrimpTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = personal.SnappyShrimpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		4214CC0B1FDFE34A00C7AB61 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -426,8 +557,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				INFOPLIST_FILE = SnappyShrimp/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -453,8 +584,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				INFOPLIST_FILE = SnappyShrimp/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -470,6 +601,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		06F6C6671FF3FE6F00E055F0 /* Build configuration list for PBXNativeTarget "SnappyShrimpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06F6C6651FF3FE6F00E055F0 /* Debug */,
+				06F6C6661FF3FE6F00E055F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4214CBF31FDFE34A00C7AB61 /* Build configuration list for PBXProject "SnappyShrimp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

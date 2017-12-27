@@ -192,8 +192,8 @@ extension CGSize{
 }
 
 enum iPhoneXMask {
-    static let portrait = UIImageView(image: UIImage(named: "maskPortrait"))
-    static let landscapeLeft = UIImageView(image: UIImage(named: "maskLandscapeLeft"))
-    static let landscapeRight = UIImageView(image: UIImage(named: "maskLandscapeRight"))
+    static let portrait = UIImageView(image: UIImage(named: "maskPortrait", in: Bundle(for: SnapshotTest.self), compatibleWith: nil))
+    static let landscapeLeft = UIImageView(image: UIImage(named: "maskLandscapeLeft", in: Bundle(for: SnapshotTest.self), compatibleWith: nil))
+    static let landscapeRight = UIImageView(image: UIImage(named: "maskLandscapeRight", in: Bundle(for: SnapshotTest.self), compatibleWith: nil))
 }
 
