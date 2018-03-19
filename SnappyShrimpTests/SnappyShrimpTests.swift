@@ -5,14 +5,22 @@
 
 class SnappyShrimpTests: SnapshotTest {
     
-    override func setUp() {
-        super.setUp()
-        recordMode = true
-    }
-    
+    //Note: Current refs were written on lates devices (iPhone 8/8Plus, iPad 12 Pro)
     func testExample() {
-        let vc = UIViewController()
-        vc.view.backgroundColor = .red
+        let vc = ViewController()
+        
+        //Has to be launched on any iPhone with @2 scale
+        verify(vc, for: Device.iPhone8.portrait)
+        
+        //Has to be launched on any iPad with @3 scale
+        verify(vc, for: Device.iPhone8Plus.landscape)
+        
+        //Has to be launched on any iPad with @2 scale
+        verify(vc, for: Device.iPadPro9.portrait.oneThird)
+        
+        //Has to be launched on iPhone with @3 scale
         verify(vc, for: Device.iPhoneX.portrait)
+        verify(vc, for: Device.iPhoneX.landscapeLeft)
+        verify(vc, for: Device.iPhoneX.landscapeRight)
     }
 }

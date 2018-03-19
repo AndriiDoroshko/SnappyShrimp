@@ -65,13 +65,13 @@
       </MacroExpansion>
       <EnvironmentVariables>
          <EnvironmentVariable
-            key = "RECORD_MODE"
-            value = "FALSE"
+            key = "FB_REFERENCE_IMAGE_DIR"
+            value = "$(SOURCE_ROOT)/Tests/ReferenceImages"
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
-            key = "FB_REFERENCE_IMAGE_DIR"
-            value = "$(SOURCE_ROOT)/Tests/ReferenceImages"
+            key = "RECORD_MODE"
+            value = "TRUE"
             isEnabled = "YES">
          </EnvironmentVariable>
          <EnvironmentVariable
