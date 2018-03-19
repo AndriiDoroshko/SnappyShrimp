@@ -10,16 +10,19 @@ extension Device {
             name: "iPhone X Portrait",
             size: CGSize.iPhoneX,
             traitCollection: UITraitCollection.iPhoneX.portrait,
-            mask: iPhoneXMask.portrait)
+            mask: iPhoneXMask.portrait,
+            safeAreas: SafeAreas.iPhoneX.portrait)
         public static let landscapeLeft = Presentation(
             name: "iPhone X Landscape Left",
             size: CGSize.iPhoneX.rotated,
             traitCollection: UITraitCollection.iPhoneX.landscape,
-            mask: iPhoneXMask.landscapeLeft)
+            mask: iPhoneXMask.landscapeLeft,
+            safeAreas: SafeAreas.iPhoneX.landscape)
         public static let landscapeRight = Presentation(
             name: "iPhone X Landscape Right",
             size: CGSize.iPhoneX.rotated,
             traitCollection: UITraitCollection.iPhoneX.landscape,
-            mask: iPhoneXMask.landscapeRight)
+            mask: iPhoneXMask.landscapeRight,
+            safeAreas: SafeAreas.iPhoneX.landscape)
     }
 }

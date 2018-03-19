@@ -13,6 +13,15 @@ public class HostWindow: UIWindow {
         return traits
     }
     
+    @available(iOS 11.0, *)
+    public override var safeAreaInsets: UIEdgeInsets {
+        guard let safeArea = presentation.safeAreas else { return super.safeAreaInsets }
+        return UIEdgeInsets(top: safeArea.top,
+                            left: safeArea.leading,
+                            bottom: safeArea.bottom,
+                            right: safeArea.trailing)
+    }
+    
     public init(presentation: Presentation, context: Context = .init()) {
         self.presentation = presentation
         self.traits = UITraitCollection(traitsFrom: [presentation.traitCollection, context.traitCollection])

@@ -25,8 +25,13 @@ open class SnapshotTest: FBSnapshotTestCase{
         guard presentation.scale == UIScreen.main.scale else { return }
         
         let window = HostWindow(presentation: presentation, context: context)
-
-        window.rootViewController = controller
+        
+        window.addSubview(controller.view)
+        controller.view.frame = window.bounds
+        
+        if #available(iOS 11.0, *) {
+            controller.additionalSafeAreaInsets = window.safeAreaInsets
+        }
         let name = [presentation.name,
                     context.name,
                     UIDevice.current.systemName,

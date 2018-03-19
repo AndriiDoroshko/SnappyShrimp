@@ -7,15 +7,18 @@ public struct Presentation {
     let name: String
     let size: CGSize
     let traitCollection: UITraitCollection
+    let safeAreas: SafeAreas.SafeAreaSize?
     let mask: UIView?
     
     public init(name: String, size: CGSize,
                 traitCollection: UITraitCollection,
-                mask: UIView? = nil) {
+                mask: UIView? = nil,
+                safeAreas: SafeAreas.SafeAreaSize? = nil) {
         self.name = name
         self.size = size
         self.traitCollection = traitCollection
         self.mask = mask
+        self.safeAreas = safeAreas
     }
 }
 

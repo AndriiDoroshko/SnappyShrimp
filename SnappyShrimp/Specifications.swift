@@ -198,3 +198,16 @@ enum iPhoneXMask {
     static let landscapeRight = UIImageView(image: UIImage(named: "maskLandscapeRight", in: Bundle(for: SnapshotTest.self), compatibleWith: nil))
 }
 
+public enum SafeAreas {
+    public struct SafeAreaSize {
+        let top: CGFloat
+        let bottom: CGFloat
+        let leading: CGFloat
+        let trailing: CGFloat
+    }
+    enum iPhoneX {
+        static let portrait = SafeAreaSize(top: 44, bottom: 34, leading: 0, trailing: 0)
+        static let landscape = SafeAreaSize(top: 0, bottom: 24, leading: 44, trailing: 44)
+    }
+}
+
