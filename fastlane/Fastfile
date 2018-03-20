@@ -1,0 +1,21 @@
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Test lane - lane that compares current views state with reference images."
+  lane :test do
+    scan(
+      fail_build: true,
+      scheme: ‘SnappyShrimpTests',
+      devices: ['iPhone 8', 'iPhone 8 Plus', 'iPad Pro (12.9-inch)']
+    )
+  end
+  desc "Record lane - use it to record new reference images to store new changes in your views."
+  lane :record do
+    scan(
+      fail_build: true,
+      scheme: 'SnappyShrimpRecord',
+      devices: ['iPhone 8', 'iPhone 8 Plus', 'iPad Pro (12.9-inch)']
+    )
+  end
+end

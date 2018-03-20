@@ -1,0 +1,11 @@
+language: swift
+osx_image: xcode9.2
+xcode_project: SnappyShrimp
+
+before_install:
+- brew update
+- bundle install
+- carthage update --platform iOS
+
+script:
+- bundle exec fastlane test
