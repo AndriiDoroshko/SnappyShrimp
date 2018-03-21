@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="SnappyShrimpTests" customModuleProvider="target">
             <connections>
@@ -20,18 +28,69 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVQ-nR-QeK">
-                    <rect key="frame" x="0.0" y="44" width="375" height="734"/>
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Snappy Shrimp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxo-1m-jY1">
+                    <rect key="frame" x="16" y="171" width="343" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="NTz-qS-JUi"/>
+                        <constraint firstAttribute="width" constant="343" id="Ynx-dd-i5N"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDW-cL-wrC">
+                    <rect key="frame" x="35" y="380" width="305" height="52"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="0Gl-8g-WEh"/>
+                        <constraint firstAttribute="width" constant="305" id="q0T-XS-IiY"/>
+                    </constraints>
                 </view>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hrY-np-a0w">
+                    <rect key="frame" x="35" y="306" width="305" height="52"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="9uu-3y-eTC"/>
+                        <constraint firstAttribute="width" constant="305" id="H9Y-7c-BqR"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pt-wy-yzA">
+                    <rect key="frame" x="151" y="476" width="73" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="73" id="5B0-R9-k8G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                    <state key="normal" title="Try me!">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" verticalCompressionResistancePriority="751" text="Snapshot Testing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIO-g1-llI">
+                    <rect key="frame" x="87.666666666666686" y="740" width="200" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="6gN-K0-tHs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="1" green="0.51293124806902213" blue="0.24877756908436777" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="xVQ-nR-QeK" firstAttribute="top" secondItem="3NO-IS-XLN" secondAttribute="top" id="0dM-ak-rSB"/>
-                <constraint firstItem="3NO-IS-XLN" firstAttribute="bottom" secondItem="xVQ-nR-QeK" secondAttribute="bottom" id="RRe-SL-6j0"/>
-                <constraint firstItem="xVQ-nR-QeK" firstAttribute="leading" secondItem="3NO-IS-XLN" secondAttribute="leading" id="iXF-QL-ZYg"/>
-                <constraint firstItem="3NO-IS-XLN" firstAttribute="trailing" secondItem="xVQ-nR-QeK" secondAttribute="trailing" id="rKd-jH-yAY"/>
+                <constraint firstItem="dxo-1m-jY1" firstAttribute="top" secondItem="3NO-IS-XLN" secondAttribute="top" constant="127" id="1Us-Cl-LhP">
+                    <variation key="heightClass=compact" constant="20"/>
+                </constraint>
+                <constraint firstItem="pIO-g1-llI" firstAttribute="centerX" secondItem="9pt-wy-yzA" secondAttribute="centerX" id="2Vx-tc-itn"/>
+                <constraint firstItem="9pt-wy-yzA" firstAttribute="top" secondItem="bDW-cL-wrC" secondAttribute="bottom" constant="43.670000000000002" id="3RF-bA-KrC"/>
+                <constraint firstItem="bDW-cL-wrC" firstAttribute="top" secondItem="hrY-np-a0w" secondAttribute="bottom" constant="22.333333333333314" id="4uM-br-nob"/>
+                <constraint firstItem="9pt-wy-yzA" firstAttribute="centerX" secondItem="3NO-IS-XLN" secondAttribute="centerX" id="PrR-mM-q7B"/>
+                <constraint firstItem="3NO-IS-XLN" firstAttribute="bottom" secondItem="pIO-g1-llI" secondAttribute="bottom" constant="10" id="RBq-jO-t31"/>
+                <constraint firstItem="dxo-1m-jY1" firstAttribute="centerX" secondItem="9pt-wy-yzA" secondAttribute="centerX" id="XxI-43-KtF"/>
+                <constraint firstItem="hrY-np-a0w" firstAttribute="top" secondItem="dxo-1m-jY1" secondAttribute="bottom" constant="87" id="Z6A-kW-fk5">
+                    <variation key="heightClass=compact" constant="20"/>
+                </constraint>
+                <constraint firstItem="hrY-np-a0w" firstAttribute="centerX" secondItem="9pt-wy-yzA" secondAttribute="centerX" id="sm7-ET-b2L"/>
+                <constraint firstItem="bDW-cL-wrC" firstAttribute="centerX" secondItem="9pt-wy-yzA" secondAttribute="centerX" id="yxs-Fi-xmu"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="3NO-IS-XLN"/>
             <point key="canvasLocation" x="48.5" y="1821"/>
