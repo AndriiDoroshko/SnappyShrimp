@@ -154,22 +154,29 @@ extension UITraitCollection {
         }
     }
     enum iPadOld {
-            static let fullScreen = iPad.portrait.fullScreen
+        static let portrait = UITraitCollection(
+            traitsFrom: [Display.InterfaceIdiom.pad,
+                         Display.SizeClass.Vertical.regular,
+                         Display.SizeClass.Horizontal.regular,
+                         Display.Scale.x2])
+        static let landscape = UITraitCollection(
+            traitsFrom: [Display.InterfaceIdiom.pad,
+                         Display.SizeClass.Vertical.regular,
+                         Display.SizeClass.Horizontal.regular,
+                         Display.Scale.x2])
     }
 }
 
 extension CGSize {
-        static let iPhoneSE = CGSize(width: 320, height: 568)
-        static let iPhoneX = CGSize(width: 375, height: 812)
-        static let iPhone = CGSize(width: 375, height: 667)
-        static let iPhonePlus = CGSize(width: 414, height: 736)
-
-        static let iPadPro9 = CGSize(width: 768, height: 1024)
-        static let iPadPro10 = CGSize(width: 834, height: 1112)
-        static let iPadPro12 = CGSize(width: 1024, height: 1366)
+    static let iPhone4S = CGSize(width: 320, height: 480)
+    static let iPhoneSE = CGSize(width: 320, height: 568)
+    static let iPhoneX = CGSize(width: 375, height: 812)
+    static let iPhone = CGSize(width: 375, height: 667)
+    static let iPhonePlus = CGSize(width: 414, height: 736)
     
-        static let watch38mm = CGSize(width: 272, height: 340)
-        static let watch42mm = CGSize(width: 312, height: 390)
+    static let iPadPro9 = CGSize(width: 768, height: 1024)
+    static let iPadPro10 = CGSize(width: 834, height: 1112)
+    static let iPadPro12 = CGSize(width: 1024, height: 1366)
 }
 extension CGSize {
     var rotated: CGSize {

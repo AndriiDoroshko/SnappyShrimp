@@ -8,10 +8,10 @@ extension Device {
         public static let portrait = Presentation(
             name: "iPad mini FullScreen",
             size: CGSize.iPadPro9,
-            traitCollection: UITraitCollection.iPadOld.fullScreen)
+            traitCollection: UITraitCollection.iPadOld.portrait)
         public static let landscape = Presentation(
             name: "iPad mini Landscape FullScreen",
             size: CGSize.iPadPro9.rotated,
-            traitCollection: UITraitCollection.iPadOld.fullScreen)
+            traitCollection: UITraitCollection.iPadOld.landscape)
     }
 }

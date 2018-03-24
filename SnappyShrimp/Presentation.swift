@@ -29,4 +29,8 @@ extension Presentation {
     var scale: CGFloat {
         return self.traitCollection.displayScale
     }
+    @available(iOS 10.0, *)
+    var gamut: UIDisplayGamut {
+        return self.traitCollection.displayGamut
+    }
 }

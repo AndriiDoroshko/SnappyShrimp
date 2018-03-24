@@ -6,6 +6,8 @@ import UIKit
 ///The base class of view snapshotting tests on all possible screens. By default, you have to create schemes for testing and for record. Both of them must contain enviroment arguments with paths to save images and with a value that indicates the record mode state ("RECORD_MODE" by default). For your own implementation of setting record mode true or false, override the setUp method and design your own way of running tests.
 open class SnapshotTest: FBSnapshotTestCase{
     
+    open var isGamutSupportEnabled = false
+    
     ///Settings for snapshot testing.
     override open func setUp() {
         super.setUp()
@@ -23,6 +25,10 @@ open class SnapshotTest: FBSnapshotTestCase{
         
         guard presentation.userInterfaceIdiom == UIDevice.current.userInterfaceIdiom else { return }
         guard presentation.scale == UIScreen.main.scale else { return }
+        
+        if isGamutSupportEnabled, #available(iOS 10.0, *) {
+            guard presentation.gamut == UIScreen.main.traitCollection.displayGamut else { return }
+        }
         
         let window = HostWindow(presentation: presentation, context: context)
         
