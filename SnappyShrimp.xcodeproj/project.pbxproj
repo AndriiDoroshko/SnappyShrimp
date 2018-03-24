@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		065B45BC20605201001E1F41 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065B45BB20605201001E1F41 /* ViewController.xib */; };
 		065B45BE20605323001E1F41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065B45BD20605323001E1F41 /* ViewController.swift */; };
+		06C01E1C206647CF00C63FBB /* iPhone4S.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C01E1B206647CF00C63FBB /* iPhone4S.swift */; };
+		06C01E692067032C00C63FBB /* iPadPro12_2nd_generation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C01E682067032C00C63FBB /* iPadPro12_2nd_generation.swift */; };
 		06CF33A11FE81F90007B0B74 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CF33A01FE81F90007B0B74 /* FBSnapshotTestCase.framework */; };
 		06F6C6581FF3F73B00E055F0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F6C6571FF3F73B00E055F0 /* Media.xcassets */; };
 		06F6C6601FF3FE6F00E055F0 /* SnappyShrimpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6C65F1FF3FE6F00E055F0 /* SnappyShrimpTests.swift */; };
@@ -52,6 +54,8 @@
 /* Begin PBXFileReference section */
 		065B45BB20605201001E1F41 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		065B45BD20605323001E1F41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		06C01E1B206647CF00C63FBB /* iPhone4S.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = iPhone4S.swift; path = iPhone/iPhone4S.swift; sourceTree = "<group>"; };
+		06C01E682067032C00C63FBB /* iPadPro12_2nd_generation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iPadPro12_2nd_generation.swift; path = iPad/iPadPro12_2nd_generation.swift; sourceTree = "<group>"; };
 		06CF33A01FE81F90007B0B74 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
 		06F6C6571FF3F73B00E055F0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		06F6C65D1FF3FE6F00E055F0 /* SnappyShrimpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnappyShrimpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,6 +199,7 @@
 				427E96251FF2A09000B4A2B4 /* iPadPro9.swift */,
 				427E96221FF2A09000B4A2B4 /* iPadPro10.swift */,
 				427E96241FF2A09000B4A2B4 /* iPadPro12.swift */,
+				06C01E682067032C00C63FBB /* iPadPro12_2nd_generation.swift */,
 			);
 			name = iPad;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 				427E96101FF2A08600B4A2B4 /* iPhone7Plus.swift */,
 				427E960D1FF2A08600B4A2B4 /* iPhone8.swift */,
 				427E960A1FF2A08600B4A2B4 /* iPhone8Plus.swift */,
+				06C01E1B206647CF00C63FBB /* iPhone4S.swift */,
 				427E960C1FF2A08600B4A2B4 /* iPhoneSE.swift */,
 				427E96121FF2A08600B4A2B4 /* iPhoneX.swift */,
 			);
@@ -390,6 +396,8 @@
 				427E96191FF2A08600B4A2B4 /* iPhone7.swift in Sources */,
 				427E962B1FF2A09000B4A2B4 /* iPadMini.swift in Sources */,
 				427E96161FF2A08600B4A2B4 /* iPhoneSE.swift in Sources */,
+				06C01E1C206647CF00C63FBB /* iPhone4S.swift in Sources */,
+				06C01E692067032C00C63FBB /* iPadPro12_2nd_generation.swift in Sources */,
 				4214CC2C1FDFE62700C7AB61 /* Specifications.swift in Sources */,
 				4214CC2D1FDFE62700C7AB61 /* SnapshotTest.swift in Sources */,
 				427E961A1FF2A08600B4A2B4 /* iPhone7Plus.swift in Sources */,
