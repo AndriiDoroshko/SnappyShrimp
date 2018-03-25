@@ -43,7 +43,6 @@ Things that we've improved to make snapshot testing experience much better:
 - Improved images naming, by adding to the image name: `device`, `orientation` and `os version`;
 - Implemented `iPhone X` safe areas and masks to capture snapshots exactly as it looks like on a real device;
 - You're able to see how your app looks like in all orientations and in all multitasking modes for iPads;
-- We've also added `Context` type to specify custom `Layout Direction` and `Content Size Category`.
 
 ### iPhone, iPhone SE and iPhone Plus examples
 
@@ -94,7 +93,15 @@ $(SRCROOT)/Carthage/Build/iOS/SnappyShrimp.framework
 
 ### Using Cocoapods
 
-We don't really use pods, but in case you want to get our framework using Cocoapods, feel free to contribute.
+1. Create Podfile
+2. Add the following line to it:
+```
+pod 'SnappyShrimp'
+```
+3. Install this and other dependencies in your podfile using:
+```
+pod install
+```
 
 ## Configuring
 
@@ -133,13 +140,11 @@ verify(controller, for: Device.iPadPro9.portrait.oneThird)
 That's how the method looks like
 ```swift
 verify(controller: UIViewController, 
-	for presentation: Presentation,
-	with context: Context = Context())
+	for presentation: Presentation)
 ```
 Where:
 - `controller` - your view controller that you want to test;
 - `presentation` - contains information about device, including size, trait colections, masks, safe areas and name;
-- `context` - the Context type provides ability to set custom `layoutDirection` and `contentSizeCategory`. If you don't specify them, they will be set to default.
 
 To create snapshot with custom traits and size, just create a `Presentation` object on your own.
 
@@ -244,8 +249,9 @@ If for the previous note there is an explanation, for the next one I haven't fou
 
 ## Contributions
 
-Feel free to contribute in our framework ot make it better.
+Feel free to contribute to make that framework even better. Here's small check list that you should read:
 
+- Read [Contributions](https://github.com/AndriiDoroshko/SnappyShrimp/tree/master/CONTRIBUTION.md) guide first;
 - Check already opened issues and requirements file if your issue is already mentioned, or in progress;
 - Open an issue;
 - Create a PR with your fixes or improvements, if you have some.
