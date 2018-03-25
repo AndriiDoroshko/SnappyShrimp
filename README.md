@@ -33,6 +33,7 @@
 7. [Automation example](#automation-example)
 8. [Why you need three devices instead one](#why-you-need-three-devices-instead-one)
 9. [Specific notes about snapshot testing](#specific-notes-about-snapshot-testing)
+10. [Contributions](#contributions)
 
 ## Features
 
@@ -145,12 +146,12 @@ To create snapshot with custom traits and size, just create a `Presentation` obj
 ### Example:
 ```swift
 public let smallViewController = Presentation(
-            name: "iPhone X Portrait",
+            name: "Custom small window",
             size: CGSize(width: 250, height: 375),
             traitCollection: UITraitCollection(
                 traitsFrom: [Display.InterfaceIdiom.phone,
-                             Display.SizeClass.Vertical.regular,
-                             Display.SizeClass.Horizontal.regular,
+                             Display.SizeClass.Vertical.compact,
+                             Display.SizeClass.Horizontal.compact,
                              Display.Scale.x2]))
 ```
 
@@ -158,7 +159,7 @@ public let smallViewController = Presentation(
 
 > [Example of using Snappy Shrimp framework](https://github.com/AndriiDoroshko/SnappyShrimp/tree/master/SnappyShrimpTests)
 
-There're two schemes for snapshot testing - one for recording, another one is for testing. We've picked this way to make things faster and easier.
+Our example of snapshot testing has two schemes - one for recording, another one is for testing. We've picked this way to make things faster and easier.
 
 To run our test example, we're using [Fastlane](https://github.com/fastlane/fastlane).
 It allows you to run testing or recording with a simple command
@@ -240,3 +241,11 @@ First of all, because we didn't add differences for devices with different gamut
 **2. Issues with empty diffs after layout updates**
 
 If for the previous note there is an explanation, for the next one I haven't found one. We've had some issues when we've had empty diffs after we've changed view hierarchy. We've simply added an empty view, that served as a container and some of the tests have failed. The only way here - record new refs. The issue can be in the original framework's issue, or in the iOS SDK. Had no time to research that issue. Feel free to share your thoughts about that.
+
+## Contributions
+
+Feel free to contribute in our framework ot make it better.
+
+- Check already opened issues and requirements file if your issue is already mentioned, or in progress;
+- Open an issue;
+- Create a PR with your fixes or improvements, if you have some.
