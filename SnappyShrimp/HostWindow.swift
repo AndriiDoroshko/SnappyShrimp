@@ -22,9 +22,9 @@ public class HostWindow: UIWindow {
                             right: safeArea.trailing)
     }
     
-    public init(presentation: Presentation, context: Context = .init()) {
+    public init(presentation: Presentation) {
         self.presentation = presentation
-        self.traits = UITraitCollection(traitsFrom: [presentation.traitCollection, context.traitCollection])
+        self.traits = presentation.traitCollection
         super.init(frame: presentation.size.asRect)
         self.mask = presentation.mask
         self.mask?.frame = self.bounds
@@ -35,7 +35,7 @@ public class HostWindow: UIWindow {
     }
 }
 
-public struct Context {
+struct Context {
     public var name: String
     public var traitCollection: UITraitCollection
     

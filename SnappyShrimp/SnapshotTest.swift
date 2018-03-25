@@ -19,7 +19,6 @@ open class SnapshotTest: FBSnapshotTestCase{
     public final func verify(
         _ controller: UIViewController,
         for presentation: Presentation,
-        in context: Context = Context(),
         file: StaticString = #file,
         line: UInt = #line) {
         
@@ -30,7 +29,7 @@ open class SnapshotTest: FBSnapshotTestCase{
             guard presentation.gamut == UIScreen.main.traitCollection.displayGamut else { return }
         }
         
-        let window = HostWindow(presentation: presentation, context: context)
+        let window = HostWindow(presentation: presentation)
         
         window.addSubview(controller.view)
         controller.view.frame = window.bounds
@@ -39,7 +38,6 @@ open class SnapshotTest: FBSnapshotTestCase{
             controller.additionalSafeAreaInsets = window.safeAreaInsets
         }
         let name = [presentation.name,
-                    context.name,
                     UIDevice.current.systemName,
                     UIDevice.current.systemVersion]
             .map { $0.replacingOccurrences(of: " ", with: "_") }
