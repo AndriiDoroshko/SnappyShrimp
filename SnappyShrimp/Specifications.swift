@@ -46,31 +46,6 @@ extension UITraitCollection {
             public static let unknown = UITraitCollection(forceTouchCapability: .unknown)
         }
     }
-    public enum ContentCategory {
-        @available(iOS 10.0, *)
-        public enum LayoutDirection {
-            public static let leftToRight = UITraitCollection(layoutDirection: .leftToRight)
-            public static let rightToLeft = UITraitCollection(layoutDirection: .rightToLeft)
-            public static let unspecified = UITraitCollection(layoutDirection: .unspecified)
-        }
-        @available(iOS 10.0, *)
-        public enum ContentSizeCategory {
-            public static let unspecified = UITraitCollection(preferredContentSizeCategory: .unspecified)
-            public static let extraSmall = UITraitCollection(preferredContentSizeCategory: .extraSmall)
-            public static let extraLarge = UITraitCollection(preferredContentSizeCategory: .extraLarge)
-            public static let small = UITraitCollection(preferredContentSizeCategory: .small)
-            public static let medium = UITraitCollection(preferredContentSizeCategory: .medium)
-            public static let large = UITraitCollection(preferredContentSizeCategory: .large)
-            public static let extraExtraSmall = UITraitCollection(preferredContentSizeCategory: .extraExtraLarge)
-            public static let extraExtraExtraLarge = UITraitCollection(preferredContentSizeCategory: .extraExtraExtraLarge)
-            public static let accessibilityMedium = UITraitCollection(preferredContentSizeCategory: .accessibilityMedium)
-            public static let accessibilityLarge = UITraitCollection(preferredContentSizeCategory: .accessibilityLarge)
-            public static let accessibilityExtraLarge = UITraitCollection(preferredContentSizeCategory: .accessibilityExtraLarge)
-            public static let accessibilityExtraExtraLarge = UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraLarge)
-            public static let accessibilityExtraExtraExtraLarge = UITraitCollection(preferredContentSizeCategory: .accessibilityExtraExtraExtraLarge)
-        }
-    }
-    
     enum iPhone {
         static let portrait = UITraitCollection(
             traitsFrom: [Display.InterfaceIdiom.phone,

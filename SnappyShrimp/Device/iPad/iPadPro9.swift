@@ -12,7 +12,6 @@ extension Device{
                 size: CGSize.iPadPro9,
                 traitCollection: UITraitCollection(traitsFrom: [
                     UITraitCollection.iPad.portrait.fullScreen,
-                    UITraitCollection.Compability.ForceTouch.available,
                     UITraitCollection.Compability.DisplayGamut.P3])
             )
             public static let twoThirds = Presentation(
@@ -20,7 +19,6 @@ extension Device{
                 size: CGSize.iPadPro9.splitViewTwoThirds,
                 traitCollection: UITraitCollection(traitsFrom: [
                     UITraitCollection.iPad.portrait.splitTwoThirds,
-                    UITraitCollection.Compability.ForceTouch.available,
                     UITraitCollection.Compability.DisplayGamut.P3])
             )
             public static let oneThird = Presentation(
@@ -28,7 +26,6 @@ extension Device{
                 size: CGSize.iPadPro9.splitViewOneThird,
                 traitCollection: UITraitCollection(traitsFrom: [
                     UITraitCollection.iPad.portrait.splitOneThird,
-                    UITraitCollection.Compability.ForceTouch.available,
                     UITraitCollection.Compability.DisplayGamut.P3])
             )
         }
@@ -38,7 +35,6 @@ extension Device{
                 size: CGSize.iPadPro9.rotated,
                 traitCollection: UITraitCollection(traitsFrom: [
                     UITraitCollection.iPad.landscape.fullScreen,
-                    UITraitCollection.Compability.ForceTouch.available,
                     UITraitCollection.Compability.DisplayGamut.P3])
             )
             public static let half = Presentation(
@@ -46,7 +42,6 @@ extension Device{
                 size: CGSize.iPadPro9.rotated.splitViewHalf,
                 traitCollection: UITraitCollection(traitsFrom: [
                     UITraitCollection.iPad.landscape.splitHalf,
-                    UITraitCollection.Compability.ForceTouch.available,
                     UITraitCollection.Compability.DisplayGamut.P3])
             )
             public static let twoThird = Presentation(
@@ -54,7 +49,6 @@ extension Device{
                 size: CGSize.iPadPro9.rotated.splitViewTwoThirds,
                 traitCollection: UITraitCollection(traitsFrom: [
                     UITraitCollection.iPad.landscape.splitTwoThirds,
-                    UITraitCollection.Compability.ForceTouch.available,
                     UITraitCollection.Compability.DisplayGamut.P3])
             )
             public static let oneThird = Presentation(
@@ -62,7 +56,6 @@ extension Device{
                 size: CGSize.iPadPro9.rotated.splitViewOneThird,
                 traitCollection: UITraitCollection(traitsFrom: [
                     UITraitCollection.iPad.landscape.splitOneThird,
-                    UITraitCollection.Compability.ForceTouch.available,
                     UITraitCollection.Compability.DisplayGamut.P3])
             )
         }
