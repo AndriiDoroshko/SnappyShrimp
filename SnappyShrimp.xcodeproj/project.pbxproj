@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0614E90F206853610068F863 /* SnappyShrimp.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0614E90E206853610068F863 /* SnappyShrimp.podspec */; };
 		065B45BC20605201001E1F41 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065B45BB20605201001E1F41 /* ViewController.xib */; };
 		065B45BE20605323001E1F41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065B45BD20605323001E1F41 /* ViewController.swift */; };
 		06C01E1C206647CF00C63FBB /* iPhone4S.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C01E1B206647CF00C63FBB /* iPhone4S.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0614E90E206853610068F863 /* SnappyShrimp.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SnappyShrimp.podspec; sourceTree = SOURCE_ROOT; };
 		065B45BB20605201001E1F41 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		065B45BD20605323001E1F41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		06C01E1B206647CF00C63FBB /* iPhone4S.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = iPhone4S.swift; path = iPhone/iPhone4S.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		06CF339E1FE81CDD007B0B74 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				0614E90E206853610068F863 /* SnappyShrimp.podspec */,
 				4214CBFC1FDFE34A00C7AB61 /* SnappyShrimp.h */,
 				4214CBFD1FDFE34A00C7AB61 /* Info.plist */,
 				06F6C6571FF3F73B00E055F0 /* Media.xcassets */,
@@ -326,6 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0614E90F206853610068F863 /* SnappyShrimp.podspec in Resources */,
 				06F6C6581FF3F73B00E055F0 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
