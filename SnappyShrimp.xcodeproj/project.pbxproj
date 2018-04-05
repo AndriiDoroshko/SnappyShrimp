@@ -190,7 +190,7 @@
 				4214CC6C1FDFEFE100C7AB61 /* Device.swift */,
 			);
 			name = Device;
-			path = Source/Device;
+			path = Sources/Device;
 			sourceTree = "<group>";
 		};
 		427E96071FF2A06600B4A2B4 /* iPad */ = {
