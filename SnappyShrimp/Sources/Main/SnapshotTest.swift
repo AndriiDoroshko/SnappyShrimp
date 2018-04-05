@@ -28,25 +28,28 @@ open class SnapshotTest: FBSnapshotTestCase{
         if isGamutSupportEnabled, #available(iOS 10.0, *) {
             guard presentation.gamut == UIScreen.main.traitCollection.displayGamut else { return }
         }
+        //let tectController = TestController()
+        //let window = HostWindow(presentation: presentation)
+        //window.addSubview(controller.view)
+        //controller.view.frame = window.bounds
+        //controller.additionalSafeAreaInsets = window.safeAreaInsets
+        //window.isHidden = false
+//  OLD
+//
+//        if #available(iOS 11.0, *) {
+//        }
+//        let name = [presentation.name,
+//                    UIDevice.current.systemName,
+//                    UIDevice.current.systemVersion]
+//            .map { $0.replacingOccurrences(of: " ", with: "_") }
+//            .filter { !$0.isEmpty }
+//            .joined(separator: "_")
+//
+//        window.isHidden = false
+//  OLD
         
-        let window = HostWindow(presentation: presentation)
+        //testsController.verify(window, identifier: name, suffixes: [""], file: file, line: line)
         
-        window.addSubview(controller.view)
-        controller.view.frame = window.bounds
-        
-        if #available(iOS 11.0, *) {
-            controller.additionalSafeAreaInsets = window.safeAreaInsets
-        }
-        let name = [presentation.name,
-                    UIDevice.current.systemName,
-                    UIDevice.current.systemVersion]
-            .map { $0.replacingOccurrences(of: " ", with: "_") }
-            .filter { !$0.isEmpty }
-            .joined(separator: "_")
-        
-        window.isHidden = false
-        
-        FBSnapshotVerifyView(window, identifier: name, suffixes: [""], file: file, line: line)
     }
 }
 
