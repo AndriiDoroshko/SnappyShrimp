@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version          = '1.6'
   s.summary          = 'New experience of Snapshot testing'
   s.platform         = :ios
-  s.swift_version    = '4.0'
+  s.swift_version    = '4.1'
   s.description      = <<-DESC
 A new, faster way of Snapshot testing. Helps to verify that your view and its layout looks exactly as you expect on all devices, in all orientations, including iPad multitasking mode support and iPhone X support with its specific design.
                        DESC
@@ -16,7 +16,8 @@ A new, faster way of Snapshot testing. Helps to verify that your view and its la
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'SnappyShrimp/*'
+  s.source_files = 'SnappyShrimp/Sources/**/*'
+  s.resources = 'SnappyShrimp/Media.xcassets'
   s.frameworks = 'UIKit', 'XCTest'
   s.dependency 'FBSnapshotTestCase', '~> 2.1.4'
 end
