@@ -18,6 +18,8 @@
 		06D1764420761FE4009A1362 /* Comparing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D1764320761FE4009A1362 /* Comparing.swift */; };
 		06D1764620762000009A1362 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D1764520762000009A1362 /* TestModel.swift */; };
 		06D1764920762056009A1362 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D1764820762056009A1362 /* TestController.swift */; };
+		06D302CC2076BFE900819C75 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D302CB2076BFE900819C75 /* Recording.swift */; };
+		06D302CE2076C00300819C75 /* Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D302CD2076C00300819C75 /* Render.swift */; };
 		06F6C6581FF3F73B00E055F0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F6C6571FF3F73B00E055F0 /* Media.xcassets */; };
 		06F6C6601FF3FE6F00E055F0 /* SnappyShrimpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6C65F1FF3FE6F00E055F0 /* SnappyShrimpTests.swift */; };
 		06F6C6621FF3FE6F00E055F0 /* SnappyShrimp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4214CBF91FDFE34A00C7AB61 /* SnappyShrimp.framework */; };
@@ -69,6 +71,8 @@
 		06D1764320761FE4009A1362 /* Comparing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comparing.swift; sourceTree = "<group>"; };
 		06D1764520762000009A1362 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		06D1764820762056009A1362 /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
+		06D302CB2076BFE900819C75 /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		06D302CD2076C00300819C75 /* Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Render.swift; sourceTree = "<group>"; };
 		06F6C6571FF3F73B00E055F0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		06F6C65D1FF3FE6F00E055F0 /* SnappyShrimpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnappyShrimpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06F6C65F1FF3FE6F00E055F0 /* SnappyShrimpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappyShrimpTests.swift; sourceTree = "<group>"; };
@@ -175,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				06D1764320761FE4009A1362 /* Comparing.swift */,
+				06D302CB2076BFE900819C75 /* Recording.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 		06D1764C20762E70009A1362 /* Renderer */ = {
 			isa = PBXGroup;
 			children = (
+				06D302CD2076C00300819C75 /* Render.swift */,
 			);
 			path = Renderer;
 			sourceTree = "<group>";
@@ -449,6 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06D302CE2076C00300819C75 /* Render.swift in Sources */,
 				4214CC2B1FDFE62700C7AB61 /* HostWindow.swift in Sources */,
 				427E96181FF2A08600B4A2B4 /* iPhone6SPlus.swift in Sources */,
 				06D1764420761FE4009A1362 /* Comparing.swift in Sources */,
@@ -464,6 +471,7 @@
 				427E96291FF2A09000B4A2B4 /* iPadAir2.swift in Sources */,
 				427E96281FF2A09000B4A2B4 /* iPadAir.swift in Sources */,
 				427E962A1FF2A09000B4A2B4 /* iPadPro10.swift in Sources */,
+				06D302CC2076BFE900819C75 /* Recording.swift in Sources */,
 				427E962D1FF2A09000B4A2B4 /* iPadPro9.swift in Sources */,
 				427E96261FF2A09000B4A2B4 /* iPadMini2.swift in Sources */,
 				427E961D1FF2A08600B4A2B4 /* iPhone6Plus.swift in Sources */,

@@ -5,7 +5,7 @@ import Foundation
 
 // Snapshot controller
 
-final class TestController {
+struct TestController {
     
     let testModel: TestModel
     let infrastructure: String //TODO: change type
@@ -18,5 +18,22 @@ final class TestController {
                 file: StaticString = #file,
                 line: UInt = #line) {
         
+        //if recordMode {
+            //recordSnapshotOfWindow
+        //} else {
+            //performPixelComparisonWithWinodw
+        
+        //}
     }
+    
+    
+    // compareSnapshot()
+    
+    // referenceImageForSelector()
+    
+    // compareReferenceImage()
+
+    // saveFailedReferenceImage()
+        
+    // getReferenceImageDirectoryWithDefault
 }

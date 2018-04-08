@@ -8,11 +8,12 @@ import Foundation
 struct TestModel {
     
     let testName: String
+    let className: String
     let isTestSucceeded: Bool
     
     let referenceImage: UIImage?
     let failedImage: UIImage
     let differenceImage: UIImage?
     
-    let testEngine: String //old ios or new ios
+    let testEngine: String? //old ios or new ios
 }
