@@ -4,9 +4,13 @@
 import Foundation
 
 enum TestingErrors: Error {
-    case referenceImageNotFound
     case invalidImageSize
     case sizeNotEqual
     case imagesNotEqual
+}
+
+enum SetupErrors: Error {
+    case referenceImageNotFound
+    case testingImageNotFound
     case invalidOS
 }

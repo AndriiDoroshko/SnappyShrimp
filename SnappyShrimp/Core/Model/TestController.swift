@@ -7,38 +7,41 @@ import Foundation
 
 struct TestController {
     
-    let testModel: TestModel?
+    var testModel: TestModel
     let infrastructure: Infrastructure //TODO: change type
-    let refImagesDirectoryPath: String?
-    let diffImagesDirectoryPath: String?
+    let refferenceImagesDirectoryPath: String?
+    let differenceImagesDirectoryPath: String?
+    let recordMode: String?
 
     
-    func verify(_ window: UIWindow,
+    mutating func verify(_ window: UIWindow,
                 identifier: String,
                 suffixes: [String],
                 file: StaticString = #file,
                 line: UInt = #line) {
         
         if #available(iOS 10.0, *) {
-            let snapshot = window.render()
+            testModel.testingImage = window.render()
         } else {
-            let snapshot = window.oldRender()
+            testModel.testingImage = window.oldRender()
         }
         
-        //if recordMode {
+        if recordMode == "TRUE" {
             //record(snapshot)
-        //} else {
-            //performPixelComparison(with: snapshot)
-        //}
+        } else {
+            compare()
+        }
     }
     
     init() {
         
         testModel = TestModel(testName: "", className: "", testingImage: nil, referenceImage: nil, differenceImage: nil, isTestSucceeded: false)
         
-        refImagesDirectoryPath = ProcessInfo.processInfo.environment["REF_IMAGES_DIR"]
+        refferenceImagesDirectoryPath = ProcessInfo.processInfo.environment["REF_IMAGES_DIR"]
         
-        diffImagesDirectoryPath = ProcessInfo.processInfo.environment["DIF_IMAGES_DIR"]
+        differenceImagesDirectoryPath = ProcessInfo.processInfo.environment["DIFF_IMAGES_DIR"]
+        
+        recordMode = ProcessInfo.processInfo.environment["RECORD_MODE"]
         
         infrastructure = Infrastructure()
     }

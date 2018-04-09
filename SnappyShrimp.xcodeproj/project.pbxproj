@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0614E90F206853610068F863 /* SnappyShrimp.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0614E90E206853610068F863 /* SnappyShrimp.podspec */; };
-		06548BBB207B5BA400B9ED25 /* TestingErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06548BBA207B5BA400B9ED25 /* TestingErrors.swift */; };
+		06548BBB207B5BA400B9ED25 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06548BBA207B5BA400B9ED25 /* Errors.swift */; };
+		06548BBD207B748E00B9ED25 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06548BBC207B748E00B9ED25 /* Context.swift */; };
 		065B45BC20605201001E1F41 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065B45BB20605201001E1F41 /* ViewController.xib */; };
 		065B45BE20605323001E1F41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065B45BD20605323001E1F41 /* ViewController.swift */; };
 		06C01E1C206647CF00C63FBB /* iPhone4S.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C01E1B206647CF00C63FBB /* iPhone4S.swift */; };
@@ -22,7 +23,7 @@
 		06D302CC2076BFE900819C75 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D302CB2076BFE900819C75 /* Recording.swift */; };
 		06D302CE2076C00300819C75 /* Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D302CD2076C00300819C75 /* Render.swift */; };
 		06F6C6581FF3F73B00E055F0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F6C6571FF3F73B00E055F0 /* Media.xcassets */; };
-		06F6C6601FF3FE6F00E055F0 /* SnappyShrimpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6C65F1FF3FE6F00E055F0 /* SnappyShrimpTests.swift */; };
+		06F6C6601FF3FE6F00E055F0 /* SnappyShrimpExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6C65F1FF3FE6F00E055F0 /* SnappyShrimpExample.swift */; };
 		06F6C6621FF3FE6F00E055F0 /* SnappyShrimp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4214CBF91FDFE34A00C7AB61 /* SnappyShrimp.framework */; };
 		4214CC0A1FDFE34A00C7AB61 /* SnappyShrimp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4214CBFC1FDFE34A00C7AB61 /* SnappyShrimp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4214CC2B1FDFE62700C7AB61 /* HostWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC261FDFE62600C7AB61 /* HostWindow.swift */; };
@@ -62,7 +63,8 @@
 
 /* Begin PBXFileReference section */
 		0614E90E206853610068F863 /* SnappyShrimp.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SnappyShrimp.podspec; sourceTree = SOURCE_ROOT; };
-		06548BBA207B5BA400B9ED25 /* TestingErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingErrors.swift; sourceTree = "<group>"; };
+		06548BBA207B5BA400B9ED25 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		06548BBC207B748E00B9ED25 /* Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		065B45BB20605201001E1F41 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		065B45BD20605323001E1F41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		06C01E1B206647CF00C63FBB /* iPhone4S.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhone4S.swift; sourceTree = "<group>"; };
@@ -77,7 +79,7 @@
 		06D302CD2076C00300819C75 /* Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Render.swift; sourceTree = "<group>"; };
 		06F6C6571FF3F73B00E055F0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		06F6C65D1FF3FE6F00E055F0 /* SnappyShrimpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnappyShrimpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		06F6C65F1FF3FE6F00E055F0 /* SnappyShrimpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappyShrimpTests.swift; sourceTree = "<group>"; };
+		06F6C65F1FF3FE6F00E055F0 /* SnappyShrimpExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappyShrimpExample.swift; sourceTree = "<group>"; };
 		06F6C6611FF3FE6F00E055F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4214CBF91FDFE34A00C7AB61 /* SnappyShrimp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnappyShrimp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4214CBFC1FDFE34A00C7AB61 /* SnappyShrimp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SnappyShrimp.h; path = Sources/SnappyShrimp.h; sourceTree = "<group>"; };
@@ -161,10 +163,9 @@
 		06D1763B20761E26009A1362 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				06D1764B20762E0A009A1362 /* Storage */,
-				06D1764A20762D92009A1362 /* Env */,
 				06D302CD2076C00300819C75 /* Render.swift */,
 				06D1763C20761E52009A1362 /* Utils.swift */,
+				06548BBC207B748E00B9ED25 /* Context.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -182,7 +183,6 @@
 			children = (
 				06D1764320761FE4009A1362 /* Comparing.swift */,
 				06D302CB2076BFE900819C75 /* Recording.swift */,
-				06548BBA207B5BA400B9ED25 /* TestingErrors.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -193,28 +193,15 @@
 				06D1764520762000009A1362 /* TestModel.swift */,
 				06D1764820762056009A1362 /* TestController.swift */,
 				4214CC261FDFE62600C7AB61 /* HostWindow.swift */,
+				06548BBA207B5BA400B9ED25 /* Errors.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		06D1764A20762D92009A1362 /* Env */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Env;
-			sourceTree = "<group>";
-		};
-		06D1764B20762E0A009A1362 /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Storage;
 			sourceTree = "<group>";
 		};
 		06F6C65E1FF3FE6F00E055F0 /* SnappyShrimpTests */ = {
 			isa = PBXGroup;
 			children = (
-				06F6C65F1FF3FE6F00E055F0 /* SnappyShrimpTests.swift */,
+				06F6C65F1FF3FE6F00E055F0 /* SnappyShrimpExample.swift */,
 				06F6C6611FF3FE6F00E055F0 /* Info.plist */,
 				065B45BB20605201001E1F41 /* ViewController.xib */,
 				065B45BD20605323001E1F41 /* ViewController.swift */,
@@ -368,7 +355,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Andrey Doroshko";
+				ORGANIZATIONNAME = "Roman Tysiachnik";
 				TargetAttributes = {
 					06F6C65C1FF3FE6F00E055F0 = {
 						CreatedOnToolsVersion = 9.2;
@@ -442,7 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				065B45BE20605323001E1F41 /* ViewController.swift in Sources */,
-				06F6C6601FF3FE6F00E055F0 /* SnappyShrimpTests.swift in Sources */,
+				06F6C6601FF3FE6F00E055F0 /* SnappyShrimpExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +454,7 @@
 				427E96281FF2A09000B4A2B4 /* iPadAir.swift in Sources */,
 				427E962A1FF2A09000B4A2B4 /* iPadPro10.swift in Sources */,
 				06D302CC2076BFE900819C75 /* Recording.swift in Sources */,
+				06548BBD207B748E00B9ED25 /* Context.swift in Sources */,
 				427E962D1FF2A09000B4A2B4 /* iPadPro9.swift in Sources */,
 				427E96261FF2A09000B4A2B4 /* iPadMini2.swift in Sources */,
 				427E961D1FF2A08600B4A2B4 /* iPhone6Plus.swift in Sources */,
@@ -478,7 +466,7 @@
 				06D1764220761FAE009A1362 /* Infrastructure.swift in Sources */,
 				06C01E692067032C00C63FBB /* iPadPro12_2nd_generation.swift in Sources */,
 				4214CC2C1FDFE62700C7AB61 /* Specifications.swift in Sources */,
-				06548BBB207B5BA400B9ED25 /* TestingErrors.swift in Sources */,
+				06548BBB207B5BA400B9ED25 /* Errors.swift in Sources */,
 				06D1764620762000009A1362 /* TestModel.swift in Sources */,
 				4214CC2D1FDFE62700C7AB61 /* SnapshotTestCase.swift in Sources */,
 				427E961A1FF2A08600B4A2B4 /* iPhone7Plus.swift in Sources */,
