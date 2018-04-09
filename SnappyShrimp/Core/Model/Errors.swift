@@ -7,6 +7,7 @@ enum TestingErrors: Error {
     case invalidImageSize
     case sizeNotEqual
     case imagesNotEqual
+    case recordMode
 }
 
 enum SetupErrors: Error {

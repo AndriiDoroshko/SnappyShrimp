@@ -3,21 +3,35 @@
 
 import UIKit
 import XCTest
-///The base class of view snapshotting tests on all possible screens. By default, you have to create schemes for testing and for record. Both of them must contain enviroment arguments with paths to save images and with a value that indicates the record mode state ("RECORD_MODE" by default). For your own implementation of setting record mode true or false, override the setUp method and design your own way of running tests.
+///The base class of view snapshotting tests on all possible screens. By default, you have to create schemes for testing and for record. Both of them must contain enviroment arguments with paths to save images and with a value that indicates the record mode state ("RECORD_MODE" by default).
 open class SnapshotTestCase: XCTestCase {
     
     open var isGamutSupportEnabled = false
     
-    //private let testController = TestController()
+    var testModel: TestModel
+    var infrastructure: Infrastructure
+    var referenceImagesDirectoryPath: String?
+    var differenceImagesDirectoryPath: String?
     
-    ///Verifies your snapshots with specified controller, whose view you're going to test and a device with its parameteres.
+    let recordMode = ProcessInfo.processInfo.environment["RECORD_MODE"]
+    
+    override init() {
+        
+        testModel = TestModel()
+        
+        infrastructure = Infrastructure()
+        
+        super.init()
+    }
     
     public final func verify(
         _ controller: UIViewController,
         for presentation: Presentation,
         file: StaticString = #file,
-        line: UInt = #line,
-        className: String = String(describing: self)) {
+        line: UInt = #line) {
+        //bundleName: String = Bundle.main.infoDictionary?["CFBundleName"] as? String,
+        //className: String = String(describing: self),
+        //testName: String = #function
         
         guard presentation.userInterfaceIdiom == UIDevice.current.userInterfaceIdiom else { return }
         guard presentation.scale == UIScreen.main.scale else { return }
@@ -25,32 +39,63 @@ open class SnapshotTestCase: XCTestCase {
         if isGamutSupportEnabled, #available(iOS 10.0, *) {
             guard presentation.gamut == UIScreen.main.traitCollection.displayGamut else { return }
         }
-        //  Future
-        //let tectController = TestController()
-        //let window = HostWindow(presentation: presentation)
-        //window.addSubview(controller.view)
-        //controller.view.frame = window.bounds
-        //controller.additionalSafeAreaInsets = window.safeAreaInsets
-        //window.isHidden = false
-        //testsController.verify(window, identifier: name, suffixes: [""], file: file, line: line)
-//  OLD
-//
-//        if #available(iOS 11.0, *) {
-//        }
-//        let name = [presentation.name,
-//                    UIDevice.current.systemName,
-//                    UIDevice.current.systemVersion]
-//            .map { $0.replacingOccurrences(of: " ", with: "_") }
-//            .filter { !$0.isEmpty }
-//            .joined(separator: "_")
-//
-//        window.isHidden = false
-        //FBSnapshotVerifyView(window, identifier: name, suffixes: [""], file: file, line: line)
-//  OLD
         
+        let window = HostWindow(presentation: presentation)
+        window.addSubview(controller.view)
         
+        controller.view.frame = window.bounds
+        if #available(iOS 11.0, *) {
+            controller.additionalSafeAreaInsets = window.safeAreaInsets
+        }
         
+        window.isHidden = false
+        
+        if #available(iOS 10.0, *) {
+            testModel.testingImage = window.render()
+        } else {
+            testModel.testingImage = window.oldRender()
+        }
+        
+        do {
+            recordMode == "TRUE" ? try record() : try compare()
+        } catch SetupErrors.referenceImageNotFound {
+            XCTFail("Couldn't load reference image. Check if you've specified 'REF_IMAGES_DIR' env variable in your scheme")
+        } catch SetupErrors.testingImageNotFound {
+            XCTFail("")
+        } catch SetupErrors.invalidOS {
+            XCTFail("")
+        } catch TestingErrors.sizeNotEqual {
+            XCTFail("")
+            //save diffs
+            //add attachment
+        } catch TestingErrors.invalidImageSize { //zero size
+            XCTFail("")
+            //save diffs
+            //add attachment
+        } catch TestingErrors.imagesNotEqual {
+            XCTFail("")
+            //save diffs
+            //add attachment
+        } catch TestingErrors.recordMode {
+            guard let image = testModel.referenceImage else { fatalError("Failure! Image wasn't recorded") }
+            infrastructure.updateReferenceImage(with: image)
+            XCTFail("")
+        } catch {
+            XCTFail("Unknown error")
+        }
     }
+    
+    
+    
+    // referenceImageForSelector()
+    
+    // renderSnapshot()
+    
+    // compareWithReferenceImage()
+    
+    // saveFailedReferenceImage()
+    
+    // getReferenceImageDirectoryWithDefault
 }
 
 

@@ -6,15 +6,7 @@ import Foundation
 // Model of snapshot controller 
 
 struct TestModel {
-    
-    let testName: String
-    let className: String
-    
-    var testingImage: UIImage?
-    
-    var referenceImage: UIImage?
-    var differenceImage: UIImage?
-    
-    var isTestSucceeded: Bool
-    
+    var testingImage: UIImage? = nil
+    var referenceImage: UIImage? = nil
+    var differenceImage: UIImage? = nil
 }

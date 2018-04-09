@@ -5,3 +5,11 @@ import Foundation
 
 // Some object that knows how to record new refs
 
+extension SnapshotTestCase {
+    
+    func record() throws {
+        guard let testingImage = testModel.testingImage else { throw SetupErrors.testingImageNotFound }
+        testModel.referenceImage = testingImage
+        throw TestingErrors.recordMode
+    }
+}
