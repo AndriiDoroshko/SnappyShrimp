@@ -7,9 +7,10 @@ import Foundation
 
 struct TestController {
     
-    let testModel: TestModel
-    let infrastructure: String //TODO: change type
-    let imagesDirectoryPath: String
+    let testModel: TestModel?
+    let infrastructure: Infrastructure //TODO: change type
+    let refImagesDirectoryPath: String?
+    let diffImagesDirectoryPath: String?
 
     
     func verify(_ window: UIWindow,
@@ -18,20 +19,35 @@ struct TestController {
                 file: StaticString = #file,
                 line: UInt = #line) {
         
-        //if recordMode {
-            //recordSnapshotOfWindow
-        //} else {
-            //performPixelComparisonWithWinodw
+        if #available(iOS 10.0, *) {
+            let snapshot = window.render()
+        } else {
+            let snapshot = window.oldRender()
+        }
         
+        //if recordMode {
+            //record(snapshot)
+        //} else {
+            //performPixelComparison(with: snapshot)
         //}
     }
     
-    
-    // compareSnapshot()
+    init() {
+        
+        testModel = TestModel(testName: "", className: "", testingImage: nil, referenceImage: nil, differenceImage: nil, isTestSucceeded: false)
+        
+        refImagesDirectoryPath = ProcessInfo.processInfo.environment["REF_IMAGES_DIR"]
+        
+        diffImagesDirectoryPath = ProcessInfo.processInfo.environment["DIF_IMAGES_DIR"]
+        
+        infrastructure = Infrastructure()
+    }
     
     // referenceImageForSelector()
+
+    // renderSnapshot()
     
-    // compareReferenceImage()
+    // compareWithReferenceImage()
 
     // saveFailedReferenceImage()
         

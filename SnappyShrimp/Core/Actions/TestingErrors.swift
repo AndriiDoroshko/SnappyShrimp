@@ -3,5 +3,10 @@
 
 import Foundation
 
-struct Infrastructure {}
-// Here should be logic to load/save images
+enum TestingErrors: Error {
+    case referenceImageNotFound
+    case invalidImageSize
+    case sizeNotEqual
+    case imagesNotEqual
+    case invalidOS
+}

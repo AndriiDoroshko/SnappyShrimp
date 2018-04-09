@@ -9,11 +9,12 @@ struct TestModel {
     
     let testName: String
     let className: String
-    let isTestSucceeded: Bool
     
-    let referenceImage: UIImage?
-    let failedImage: UIImage
-    let differenceImage: UIImage?
+    var testingImage: UIImage?
     
-    let testEngine: String? //old ios or new ios
+    var referenceImage: UIImage?
+    var differenceImage: UIImage?
+    
+    var isTestSucceeded: Bool
+    
 }

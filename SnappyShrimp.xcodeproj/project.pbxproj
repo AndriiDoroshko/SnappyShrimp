@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0614E90F206853610068F863 /* SnappyShrimp.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0614E90E206853610068F863 /* SnappyShrimp.podspec */; };
+		06548BBB207B5BA400B9ED25 /* TestingErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06548BBA207B5BA400B9ED25 /* TestingErrors.swift */; };
 		065B45BC20605201001E1F41 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065B45BB20605201001E1F41 /* ViewController.xib */; };
 		065B45BE20605323001E1F41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065B45BD20605323001E1F41 /* ViewController.swift */; };
 		06C01E1C206647CF00C63FBB /* iPhone4S.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C01E1B206647CF00C63FBB /* iPhone4S.swift */; };
@@ -26,7 +27,7 @@
 		4214CC0A1FDFE34A00C7AB61 /* SnappyShrimp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4214CBFC1FDFE34A00C7AB61 /* SnappyShrimp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4214CC2B1FDFE62700C7AB61 /* HostWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC261FDFE62600C7AB61 /* HostWindow.swift */; };
 		4214CC2C1FDFE62700C7AB61 /* Specifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC271FDFE62700C7AB61 /* Specifications.swift */; };
-		4214CC2D1FDFE62700C7AB61 /* SnapshotTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC281FDFE62700C7AB61 /* SnapshotTest.swift */; };
+		4214CC2D1FDFE62700C7AB61 /* SnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC281FDFE62700C7AB61 /* SnapshotTestCase.swift */; };
 		4214CC2E1FDFE62700C7AB61 /* Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC291FDFE62700C7AB61 /* Presentation.swift */; };
 		4214CC6D1FDFEFE100C7AB61 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4214CC6C1FDFEFE100C7AB61 /* Device.swift */; };
 		427E96141FF2A08600B4A2B4 /* iPhone8Plus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E960A1FF2A08600B4A2B4 /* iPhone8Plus.swift */; };
@@ -61,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		0614E90E206853610068F863 /* SnappyShrimp.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SnappyShrimp.podspec; sourceTree = SOURCE_ROOT; };
+		06548BBA207B5BA400B9ED25 /* TestingErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingErrors.swift; sourceTree = "<group>"; };
 		065B45BB20605201001E1F41 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		065B45BD20605323001E1F41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		06C01E1B206647CF00C63FBB /* iPhone4S.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhone4S.swift; sourceTree = "<group>"; };
@@ -82,7 +84,7 @@
 		4214CBFD1FDFE34A00C7AB61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
 		4214CC261FDFE62600C7AB61 /* HostWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostWindow.swift; sourceTree = "<group>"; };
 		4214CC271FDFE62700C7AB61 /* Specifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Specifications.swift; sourceTree = "<group>"; };
-		4214CC281FDFE62700C7AB61 /* SnapshotTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotTest.swift; sourceTree = "<group>"; };
+		4214CC281FDFE62700C7AB61 /* SnapshotTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotTestCase.swift; sourceTree = "<group>"; };
 		4214CC291FDFE62700C7AB61 /* Presentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentation.swift; sourceTree = "<group>"; };
 		4214CC6C1FDFEFE100C7AB61 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Device.swift; path = ../../Sources/Device/Device.swift; sourceTree = "<group>"; };
 		427E960A1FF2A08600B4A2B4 /* iPhone8Plus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhone8Plus.swift; sourceTree = "<group>"; };
@@ -139,7 +141,7 @@
 		06CF339F1FE81CEB007B0B74 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				4214CC281FDFE62700C7AB61 /* SnapshotTest.swift */,
+				4214CC281FDFE62700C7AB61 /* SnapshotTestCase.swift */,
 			);
 			name = Main;
 			path = Sources/Main;
@@ -149,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				06D1764720762005009A1362 /* Model */,
-				06D1764C20762E70009A1362 /* Renderer */,
 				06D1764020761F16009A1362 /* Actions */,
 				06D1763F20761EA1009A1362 /* Infrastructure */,
 				06D1763B20761E26009A1362 /* Utils */,
@@ -162,6 +163,7 @@
 			children = (
 				06D1764B20762E0A009A1362 /* Storage */,
 				06D1764A20762D92009A1362 /* Env */,
+				06D302CD2076C00300819C75 /* Render.swift */,
 				06D1763C20761E52009A1362 /* Utils.swift */,
 			);
 			path = Utils;
@@ -180,6 +182,7 @@
 			children = (
 				06D1764320761FE4009A1362 /* Comparing.swift */,
 				06D302CB2076BFE900819C75 /* Recording.swift */,
+				06548BBA207B5BA400B9ED25 /* TestingErrors.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -206,14 +209,6 @@
 			children = (
 			);
 			path = Storage;
-			sourceTree = "<group>";
-		};
-		06D1764C20762E70009A1362 /* Renderer */ = {
-			isa = PBXGroup;
-			children = (
-				06D302CD2076C00300819C75 /* Render.swift */,
-			);
-			path = Renderer;
 			sourceTree = "<group>";
 		};
 		06F6C65E1FF3FE6F00E055F0 /* SnappyShrimpTests */ = {
@@ -483,8 +478,9 @@
 				06D1764220761FAE009A1362 /* Infrastructure.swift in Sources */,
 				06C01E692067032C00C63FBB /* iPadPro12_2nd_generation.swift in Sources */,
 				4214CC2C1FDFE62700C7AB61 /* Specifications.swift in Sources */,
+				06548BBB207B5BA400B9ED25 /* TestingErrors.swift in Sources */,
 				06D1764620762000009A1362 /* TestModel.swift in Sources */,
-				4214CC2D1FDFE62700C7AB61 /* SnapshotTest.swift in Sources */,
+				4214CC2D1FDFE62700C7AB61 /* SnapshotTestCase.swift in Sources */,
 				427E961A1FF2A08600B4A2B4 /* iPhone7Plus.swift in Sources */,
 				427E96151FF2A08600B4A2B4 /* iPhone6S.swift in Sources */,
 			);

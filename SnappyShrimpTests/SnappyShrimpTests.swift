@@ -3,7 +3,7 @@
 
 @testable import SnappyShrimp
 
-class SnappyShrimpTests: SnapshotTest {
+class SnappyShrimpTests: SnapshotTestCase {
     
     // Note: Current refs were written on lates devices (iPhone 8/8Plus, iPad 12 Pro).
     // Due to differences in devices, that you can't override, don't change testing devices, unless you want to override refs.

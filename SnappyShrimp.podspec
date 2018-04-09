@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SnappyShrimp'
-  s.version          = '1.6'
+  s.version          = '2.0'
   s.summary          = 'New experience of Snapshot testing'
   s.platform         = :ios
   s.swift_version    = '4.1'
