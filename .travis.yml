@@ -1,11 +1,12 @@
+os: osx
 osx_image: xcode10.1
 xcode_project: SnappyShrimp
 
-before_install:
-- brew update
+install:
 - bundle install
 - carthage update --platform iOS
 
 script:
 - bundle exec fastlane test
-- pod spec lint --allow-warnings
+- bundle exec pod repo update
+- bundle exec pod spec lint --fail-fast --allow-warnings --verbose
