@@ -7,11 +7,11 @@ extension Device {
     public enum iPadMini {
         public static let portrait = Presentation(
             name: "iPad mini FullScreen",
-            size: CGSize.iPadPro9,
+            size: CGSize.iPadMini,
             traitCollection: UITraitCollection.iPadOld.portrait)
         public static let landscape = Presentation(
             name: "iPad mini Landscape FullScreen",
-            size: CGSize.iPadPro9.rotated,
+            size: CGSize.iPadMini.rotated,
             traitCollection: UITraitCollection.iPadOld.landscape)
     }
 }

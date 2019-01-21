@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060DAEED21F65EAF00A05BD2 /* iPhoneXSMax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060DAEEC21F65EAF00A05BD2 /* iPhoneXSMax.swift */; };
+		060DAEEF21F6620100A05BD2 /* iPhoneXR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060DAEEE21F6620100A05BD2 /* iPhoneXR.swift */; };
+		060DAEF121F6636A00A05BD2 /* iPadPro11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060DAEF021F6636A00A05BD2 /* iPadPro11.swift */; };
+		060DAEF321F6637200A05BD2 /* iPadPro13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060DAEF221F6637200A05BD2 /* iPadPro13.swift */; };
 		0614E90F206853610068F863 /* SnappyShrimp.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0614E90E206853610068F863 /* SnappyShrimp.podspec */; };
 		065B45BC20605201001E1F41 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065B45BB20605201001E1F41 /* ViewController.xib */; };
 		065B45BE20605323001E1F41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065B45BD20605323001E1F41 /* ViewController.swift */; };
 		06C01E1C206647CF00C63FBB /* iPhone4S.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C01E1B206647CF00C63FBB /* iPhone4S.swift */; };
-		06C01E692067032C00C63FBB /* iPadPro12_2nd_generation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C01E682067032C00C63FBB /* iPadPro12_2nd_generation.swift */; };
+		06C01E692067032C00C63FBB /* iPadPro12_9_2nd_gen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06C01E682067032C00C63FBB /* iPadPro12_9_2nd_gen.swift */; };
 		06CF33A11FE81F90007B0B74 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06CF33A01FE81F90007B0B74 /* FBSnapshotTestCase.framework */; };
 		06F6C6581FF3F73B00E055F0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F6C6571FF3F73B00E055F0 /* Media.xcassets */; };
 		06F6C6601FF3FE6F00E055F0 /* SnappyShrimpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6C65F1FF3FE6F00E055F0 /* SnappyShrimpTests.swift */; };
@@ -38,7 +42,7 @@
 		427E96291FF2A09000B4A2B4 /* iPadAir2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E96211FF2A09000B4A2B4 /* iPadAir2.swift */; };
 		427E962A1FF2A09000B4A2B4 /* iPadPro10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E96221FF2A09000B4A2B4 /* iPadPro10.swift */; };
 		427E962B1FF2A09000B4A2B4 /* iPadMini.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E96231FF2A09000B4A2B4 /* iPadMini.swift */; };
-		427E962C1FF2A09000B4A2B4 /* iPadPro12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E96241FF2A09000B4A2B4 /* iPadPro12.swift */; };
+		427E962C1FF2A09000B4A2B4 /* iPadPro12_9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E96241FF2A09000B4A2B4 /* iPadPro12_9.swift */; };
 		427E962D1FF2A09000B4A2B4 /* iPadPro9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427E96251FF2A09000B4A2B4 /* iPadPro9.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,11 +57,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		060DAEEC21F65EAF00A05BD2 /* iPhoneXSMax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneXSMax.swift; sourceTree = "<group>"; };
+		060DAEEE21F6620100A05BD2 /* iPhoneXR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneXR.swift; sourceTree = "<group>"; };
+		060DAEF021F6636A00A05BD2 /* iPadPro11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadPro11.swift; sourceTree = "<group>"; };
+		060DAEF221F6637200A05BD2 /* iPadPro13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadPro13.swift; sourceTree = "<group>"; };
 		0614E90E206853610068F863 /* SnappyShrimp.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SnappyShrimp.podspec; sourceTree = SOURCE_ROOT; };
 		065B45BB20605201001E1F41 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		065B45BD20605323001E1F41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		06C01E1B206647CF00C63FBB /* iPhone4S.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhone4S.swift; sourceTree = "<group>"; };
-		06C01E682067032C00C63FBB /* iPadPro12_2nd_generation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadPro12_2nd_generation.swift; sourceTree = "<group>"; };
+		06C01E682067032C00C63FBB /* iPadPro12_9_2nd_gen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadPro12_9_2nd_gen.swift; sourceTree = "<group>"; };
 		06CF33A01FE81F90007B0B74 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
 		06F6C6571FF3F73B00E055F0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		06F6C65D1FF3FE6F00E055F0 /* SnappyShrimpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnappyShrimpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +95,7 @@
 		427E96211FF2A09000B4A2B4 /* iPadAir2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadAir2.swift; sourceTree = "<group>"; };
 		427E96221FF2A09000B4A2B4 /* iPadPro10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadPro10.swift; sourceTree = "<group>"; };
 		427E96231FF2A09000B4A2B4 /* iPadMini.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadMini.swift; sourceTree = "<group>"; };
-		427E96241FF2A09000B4A2B4 /* iPadPro12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadPro12.swift; sourceTree = "<group>"; };
+		427E96241FF2A09000B4A2B4 /* iPadPro12_9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadPro12_9.swift; sourceTree = "<group>"; };
 		427E96251FF2A09000B4A2B4 /* iPadPro9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPadPro9.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,8 +211,10 @@
 				427E961E1FF2A09000B4A2B4 /* iPadMini2.swift */,
 				427E96251FF2A09000B4A2B4 /* iPadPro9.swift */,
 				427E96221FF2A09000B4A2B4 /* iPadPro10.swift */,
-				427E96241FF2A09000B4A2B4 /* iPadPro12.swift */,
-				06C01E682067032C00C63FBB /* iPadPro12_2nd_generation.swift */,
+				427E96241FF2A09000B4A2B4 /* iPadPro12_9.swift */,
+				06C01E682067032C00C63FBB /* iPadPro12_9_2nd_gen.swift */,
+				060DAEF021F6636A00A05BD2 /* iPadPro11.swift */,
+				060DAEF221F6637200A05BD2 /* iPadPro13.swift */,
 			);
 			name = iPad;
 			path = ../../Sources/Device/iPad;
@@ -224,6 +234,8 @@
 				06C01E1B206647CF00C63FBB /* iPhone4S.swift */,
 				427E960C1FF2A08600B4A2B4 /* iPhoneSE.swift */,
 				427E96121FF2A08600B4A2B4 /* iPhoneX.swift */,
+				060DAEEE21F6620100A05BD2 /* iPhoneXR.swift */,
+				060DAEEC21F65EAF00A05BD2 /* iPhoneXSMax.swift */,
 			);
 			name = iPhone;
 			path = ../../Sources/Device/iPhone;
@@ -376,21 +388,25 @@
 				427E961C1FF2A08600B4A2B4 /* iPhoneX.swift in Sources */,
 				427E96171FF2A08600B4A2B4 /* iPhone8.swift in Sources */,
 				4214CC2E1FDFE62700C7AB61 /* Presentation.swift in Sources */,
+				060DAEEF21F6620100A05BD2 /* iPhoneXR.swift in Sources */,
 				4214CC6D1FDFEFE100C7AB61 /* Device.swift in Sources */,
 				427E96271FF2A09000B4A2B4 /* iPad5thGen.swift in Sources */,
-				427E962C1FF2A09000B4A2B4 /* iPadPro12.swift in Sources */,
+				427E962C1FF2A09000B4A2B4 /* iPadPro12_9.swift in Sources */,
 				427E96291FF2A09000B4A2B4 /* iPadAir2.swift in Sources */,
+				060DAEF121F6636A00A05BD2 /* iPadPro11.swift in Sources */,
+				060DAEF321F6637200A05BD2 /* iPadPro13.swift in Sources */,
 				427E96281FF2A09000B4A2B4 /* iPadAir.swift in Sources */,
 				427E962A1FF2A09000B4A2B4 /* iPadPro10.swift in Sources */,
 				427E962D1FF2A09000B4A2B4 /* iPadPro9.swift in Sources */,
 				427E96261FF2A09000B4A2B4 /* iPadMini2.swift in Sources */,
 				427E961D1FF2A08600B4A2B4 /* iPhone6Plus.swift in Sources */,
 				427E961B1FF2A08600B4A2B4 /* iPhone6.swift in Sources */,
+				060DAEED21F65EAF00A05BD2 /* iPhoneXSMax.swift in Sources */,
 				427E96191FF2A08600B4A2B4 /* iPhone7.swift in Sources */,
 				427E962B1FF2A09000B4A2B4 /* iPadMini.swift in Sources */,
 				427E96161FF2A08600B4A2B4 /* iPhoneSE.swift in Sources */,
 				06C01E1C206647CF00C63FBB /* iPhone4S.swift in Sources */,
-				06C01E692067032C00C63FBB /* iPadPro12_2nd_generation.swift in Sources */,
+				06C01E692067032C00C63FBB /* iPadPro12_9_2nd_gen.swift in Sources */,
 				4214CC2C1FDFE62700C7AB61 /* Specifications.swift in Sources */,
 				4214CC2D1FDFE62700C7AB61 /* SnapshotTest.swift in Sources */,
 				427E961A1FF2A08600B4A2B4 /* iPhone7Plus.swift in Sources */,

@@ -87,6 +87,40 @@ extension UITraitCollection {
                          Compability.ForceTouch.available,
                          Compability.DisplayGamut.P3])
     }
+    @available(iOS 11.0, *)
+    enum iPhoneXSMax {
+        static let portrait = UITraitCollection(
+            traitsFrom: [Display.InterfaceIdiom.phone,
+                         Display.SizeClass.Vertical.regular,
+                         Display.SizeClass.Horizontal.compact,
+                         Display.Scale.x3,
+                         Compability.ForceTouch.available,
+                         Compability.DisplayGamut.P3])
+        static let landscape = UITraitCollection(
+            traitsFrom: [Display.InterfaceIdiom.phone,
+                         Display.SizeClass.Vertical.compact,
+                         Display.SizeClass.Horizontal.compact,
+                         Display.Scale.x3,
+                         Compability.ForceTouch.available,
+                         Compability.DisplayGamut.P3])
+    }
+    @available(iOS 11.0, *)
+    enum iPhoneXR {
+        static let portrait = UITraitCollection(
+            traitsFrom: [Display.InterfaceIdiom.phone,
+                         Display.SizeClass.Vertical.regular,
+                         Display.SizeClass.Horizontal.compact,
+                         Display.Scale.x2,
+                         Compability.ForceTouch.available,
+                         Compability.DisplayGamut.P3])
+        static let landscape = UITraitCollection(
+            traitsFrom: [Display.InterfaceIdiom.phone,
+                         Display.SizeClass.Vertical.compact,
+                         Display.SizeClass.Horizontal.regular,
+                         Display.Scale.x2,
+                         Compability.ForceTouch.available,
+                         Compability.DisplayGamut.P3])
+    }
     enum iPad {
         enum portrait {
             static let fullScreen = UITraitCollection(
@@ -146,12 +180,16 @@ extension CGSize {
     static let iPhone4S = CGSize(width: 320, height: 480)
     static let iPhoneSE = CGSize(width: 320, height: 568)
     static let iPhoneX = CGSize(width: 375, height: 812)
+    static let iPhoneXR = CGSize(width: 413, height: 896)
+    static let iPhoneXSMax = CGSize(width: 414, height: 896)
     static let iPhone = CGSize(width: 375, height: 667)
     static let iPhonePlus = CGSize(width: 414, height: 736)
     
-    static let iPadPro9 = CGSize(width: 768, height: 1024)
-    static let iPadPro10 = CGSize(width: 834, height: 1112)
-    static let iPadPro12 = CGSize(width: 1024, height: 1366)
+    static let iPadMini = CGSize(width: 768, height: 1024)
+    static let iPadPro9_7 = CGSize(width: 768, height: 1024)
+    static let iPadPro10_5 = CGSize(width: 834, height: 1112)
+    static let iPadPro11 = CGSize(width: 1024, height: 1366)
+    static let iPadPro12_9 = CGSize(width: 1024, height: 1366)
 }
 extension CGSize {
     var rotated: CGSize {
@@ -188,6 +226,10 @@ public enum SafeAreas {
         let trailing: CGFloat
     }
     enum iPhoneX {
+        static let portrait = SafeAreaSize(top: 44, bottom: 34, leading: 0, trailing: 0)
+        static let landscape = SafeAreaSize(top: 0, bottom: 24, leading: 44, trailing: 44)
+    }
+    enum iPhoneXSMax {
         static let portrait = SafeAreaSize(top: 44, bottom: 34, leading: 0, trailing: 0)
         static let landscape = SafeAreaSize(top: 0, bottom: 24, leading: 44, trailing: 44)
     }

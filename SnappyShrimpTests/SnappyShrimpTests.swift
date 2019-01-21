@@ -20,9 +20,9 @@ class SnappyShrimpTests: SnapshotTest {
         verify(vc, for: Device.iPhone8Plus.portrait)
         
         //Has to be launched on any iPad with @2 scale and sRGB screen
-        verify(vc, for: Device.iPadPro12.portrait.fullScreen)
-        verify(vc, for: Device.iPadPro12.portrait.oneThird)
-        verify(vc, for: Device.iPadPro12.portrait.twoThirds)
+        verify(vc, for: Device.iPadPro12_9.portrait.fullScreen)
+        verify(vc, for: Device.iPadPro12_9.portrait.oneThird)
+        verify(vc, for: Device.iPadPro12_9.portrait.twoThirds)
         
         
         //Has to be launched on iPhone with @3 scale and P3 screen
