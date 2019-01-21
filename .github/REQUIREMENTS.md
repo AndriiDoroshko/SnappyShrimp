@@ -2,7 +2,8 @@
 
 ## List of the updates that should've been done
 
-- [ ] Cocoapods support;
+- [x] Cocoapods support;
+- [ ] Tests autorecord support 
 - [ ] New core instead FBSnapshotTestCase, that will also include new features, like:
     - Customizable export path and naming;
     - Add ability to use old API (UIGraphicsBeginImageWithContext) and the new one for iOS 10.0+ (UIGraphicsRenderer);

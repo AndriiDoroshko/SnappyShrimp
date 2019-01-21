@@ -1,5 +1,4 @@
-language: swift
-osx_image: xcode9.2
+osx_image: xcode10.1
 xcode_project: SnappyShrimp
 
 before_install:
@@ -9,3 +8,4 @@ before_install:
 
 script:
 - bundle exec fastlane test
+- pod spec lint --allow-warnings
