@@ -8,33 +8,33 @@ extension Device {
         public enum portrait {
             public static let fullScreen = Presentation(
                 name: "iPad mini2 FullScreen",
-                size: CGSize.iPadPro9,
+                size: CGSize.iPadMini,
                 traitCollection: UITraitCollection.iPad.portrait.fullScreen)
             public static let twoThirds = Presentation(
                 name: "iPad mini2 Portrait SplitView Two-Thirds",
-                size: CGSize.iPadPro9.splitViewTwoThirds,
+                size: CGSize.iPadMini.splitViewTwoThirds,
                 traitCollection: UITraitCollection.iPad.portrait.fullScreen)
             public static let oneThird = Presentation(
                 name: "iPad mini2 Portrait SplitView One Third",
-                size: CGSize.iPadPro9.splitViewOneThird,
+                size: CGSize.iPadMini.splitViewOneThird,
                 traitCollection: UITraitCollection.iPad.portrait.splitOneThird)
         }
         public enum landscape {
             public static let fullScreen = Presentation(
                 name: "iPad mini2 Landscape FullScreen",
-                size: CGSize.iPadPro9.rotated,
+                size: CGSize.iPadMini.rotated,
                 traitCollection: UITraitCollection.iPad.landscape.fullScreen)
             public static let half = Presentation(
                 name: "iPad mini2 Landscape SplitView Half",
-                size: CGSize.iPadPro9.rotated.splitViewHalf,
+                size: CGSize.iPadMini.rotated.splitViewHalf,
                 traitCollection: UITraitCollection.iPad.landscape.splitHalf)
             public static let twoThird = Presentation(
                 name: "iPad mini2 Landscape SplitView Two-Thirds",
-                size: CGSize.iPadPro9.rotated.splitViewTwoThirds,
+                size: CGSize.iPadMini.rotated.splitViewTwoThirds,
                 traitCollection: UITraitCollection.iPad.landscape.fullScreen)
             public static let oneThird = Presentation(
                 name: "iPad mini2 Landscape SplitView One Third",
-                size: CGSize.iPadPro9.rotated.splitViewOneThird,
+                size: CGSize.iPadMini.rotated.splitViewOneThird,
                 traitCollection: UITraitCollection.iPad.landscape.splitHalf)
         }
     }

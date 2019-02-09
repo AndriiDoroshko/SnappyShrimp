@@ -4,29 +4,29 @@
 import Foundation
 
 extension Device {
-    public enum iPadPro12 {
+    public enum iPadPro12_9 {
         public enum portrait {
             public static let fullScreen = Presentation(
                 name: "iPad Pro12 Portrait FullScreen",
-                size: CGSize.iPadPro12,
+                size: CGSize.iPadPro12_9,
                 traitCollection: UITraitCollection.iPad.portrait.fullScreen)
             public static let twoThirds = Presentation(
                 name: "iPad Pro12 Portrait Two Third",
-                size: CGSize.iPadPro12.splitViewTwoThirds,
+                size: CGSize.iPadPro12_9.splitViewTwoThirds,
                 traitCollection: UITraitCollection.iPad.portrait.fullScreen)
             public static let oneThird = Presentation(
                 name: "iPad Pro12 Portrait SplitView One Third",
-                size: CGSize.iPadPro12.splitViewOneThird,
+                size: CGSize.iPadPro12_9.splitViewOneThird,
                 traitCollection: UITraitCollection.iPad.portrait.splitOneThird)
         }
         public enum landscape {
             public static let fullScreen = Presentation(
                 name: "iPad Pro12 Landscape FullScreen",
-                size: CGSize.iPadPro12.rotated,
+                size: CGSize.iPadPro12_9.rotated,
                 traitCollection: UITraitCollection.iPad.landscape.fullScreen)
             public static let half = Presentation(
                 name: "iPad Pro12 Landscape SplitView Half",
-                size: CGSize.iPadPro12.rotated.splitViewHalf,
+                size: CGSize.iPadPro12_9.rotated.splitViewHalf,
                 traitCollection: UITraitCollection(
                     traitsFrom: [UITraitCollection.Display.InterfaceIdiom.pad,
                                  UITraitCollection.Display.SizeClass.Vertical.regular,
@@ -34,11 +34,11 @@ extension Device {
                                  UITraitCollection.Display.Scale.x2]))
             public static let twoThird = Presentation(
                 name: "iPad Pro12 Landscape SplitView Two-Thirds",
-                size: CGSize.iPadPro12.rotated.splitViewTwoThirds,
+                size: CGSize.iPadPro12_9.rotated.splitViewTwoThirds,
                 traitCollection: UITraitCollection.iPad.landscape.splitTwoThirds)
             public static let oneThird = Presentation(
                 name: "iPad Pro12 Landscape SplitView One Third",
-                size: CGSize.iPadPro12.rotated.splitViewOneThird,
+                size: CGSize.iPadPro12_9.rotated.splitViewOneThird,
                 traitCollection: UITraitCollection.iPad.landscape.splitOneThird)
         }
     }
