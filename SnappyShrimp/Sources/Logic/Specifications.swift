@@ -99,7 +99,7 @@ extension UITraitCollection {
         static let landscape = UITraitCollection(
             traitsFrom: [Display.InterfaceIdiom.phone,
                          Display.SizeClass.Vertical.compact,
-                         Display.SizeClass.Horizontal.compact,
+                         Display.SizeClass.Horizontal.regular,
                          Display.Scale.x3,
                          Compability.ForceTouch.available,
                          Compability.DisplayGamut.P3])
@@ -180,7 +180,7 @@ extension CGSize {
     static let iPhone4S = CGSize(width: 320, height: 480)
     static let iPhoneSE = CGSize(width: 320, height: 568)
     static let iPhoneX = CGSize(width: 375, height: 812)
-    static let iPhoneXR = CGSize(width: 413, height: 896)
+    static let iPhoneXR = CGSize(width: 414, height: 896)
     static let iPhoneXSMax = CGSize(width: 414, height: 896)
     static let iPhone = CGSize(width: 375, height: 667)
     static let iPhonePlus = CGSize(width: 414, height: 736)
